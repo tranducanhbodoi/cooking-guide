@@ -1,0 +1,341 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin One",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "ADMIN"
+    },
+    {
+      "id": "2",
+      "name": "Chef Lan",
+      "email": "chef.lan@example.com",
+      "password": "chef123",
+      "role": "CHEF"
+    },
+    {
+      "id": "3",
+      "name": "Nguyen User",
+      "email": "ducnamle@gmail.com",
+      "password": "Nam202303",
+      "role": "USER"
+    },
+    {
+      "id": "f84f",
+      "name": "tranducanh123",
+      "email": "ducanhtran211110@gmail.com",
+      "password": "tranducanh123",
+      "role": "USER"
+    }
+  ],
+  "tags": [
+    {
+      "id": "1",
+      "key": "chay",
+      "label": "Món chay"
+    },
+    {
+      "id": "2",
+      "key": "healthy",
+      "label": "Lành mạnh"
+    },
+    {
+      "id": "3",
+      "key": "keto",
+      "label": "Keto"
+    },
+    {
+      "id": "4",
+      "key": "low-carb",
+      "label": "Low-carb"
+    },
+    {
+      "id": "5",
+      "key": "gluten-free",
+      "label": "Không gluten"
+    },
+    {
+      "id": "6",
+      "key": "an-sang",
+      "label": "Ăn sáng"
+    },
+    {
+      "id": "7",
+      "key": "an-trua",
+      "label": "Ăn trưa"
+    },
+    {
+      "id": "8",
+      "key": "an-toi",
+      "label": "Ăn tối"
+    },
+    {
+      "id": "9",
+      "key": "an-vat",
+      "label": "Ăn vặt"
+    },
+    {
+      "id": "10",
+      "key": "mon-chinh",
+      "label": "Món chính"
+    },
+    {
+      "id": "11",
+      "key": "mon-phu",
+      "label": "Món phụ"
+    },
+    {
+      "id": "12",
+      "key": "trang-mieng",
+      "label": "Tráng miệng"
+    },
+    {
+      "id": "13",
+      "key": "sup",
+      "label": "Súp"
+    },
+    {
+      "id": "14",
+      "key": "hai-san",
+      "label": "Hải sản"
+    },
+    {
+      "id": "15",
+      "key": "thit-do",
+      "label": "Thịt đỏ"
+    },
+    {
+      "id": "16",
+      "key": "thit-trang",
+      "label": "Thịt trắng"
+    },
+    {
+      "id": "17",
+      "key": "rau-cu",
+      "label": "Rau củ"
+    },
+    {
+      "id": "18",
+      "key": "ngu-coc",
+      "label": "Ngũ cốc"
+    },
+    {
+      "id": "19",
+      "key": "trai-cay",
+      "label": "Trái cây"
+    },
+    {
+      "id": "20",
+      "key": "do-uong",
+      "label": "Đồ uống"
+    },
+    {
+      "id": "21",
+      "key": "ca-phe",
+      "label": "Cà phê"
+    },
+    {
+      "id": "22",
+      "key": "tra",
+      "label": "Trà"
+    },
+    {
+      "id": "23",
+      "key": "nuoc-ep",
+      "label": "Nước ép"
+    },
+    {
+      "id": "24",
+      "key": "sinh-to",
+      "label": "Sinh tố"
+    },
+    {
+      "id": "25",
+      "key": "mocktail",
+      "label": "Mocktail"
+    },
+    {
+      "id": "26",
+      "key": "cocktail",
+      "label": "Cocktail"
+    },
+    {
+      "id": "27",
+      "key": "viet-nam",
+      "label": "Việt Nam"
+    },
+    {
+      "id": "28",
+      "key": "han-quoc",
+      "label": "Hàn Quốc"
+    },
+    {
+      "id": "29",
+      "key": "nhat-ban",
+      "label": "Nhật Bản"
+    },
+    {
+      "id": "30",
+      "key": "trung-quoc",
+      "label": "Trung Quốc"
+    },
+    {
+      "id": "31",
+      "key": "y",
+      "label": "Ý"
+    },
+    {
+      "id": "32",
+      "key": "phap",
+      "label": "Pháp"
+    },
+    {
+      "id": "33",
+      "key": "my",
+      "label": "Mỹ"
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "title": "Canh bí đao chay đơn giản",
+      "image": "/img/canh-bi-dao.jpg",
+      "tags": [
+        "chay"
+      ],
+      "prepTime": 10,
+      "cookTime": 15,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Bí đao",
+          "qty": 1,
+          "unit": "trái (500g)"
+        },
+        {
+          "name": "Tỏi",
+          "qty": 2,
+          "unit": "tép"
+        },
+        {
+          "name": "Hành lá",
+          "qty": 1,
+          "unit": "nhánh"
+        },
+        {
+          "name": "Muối",
+          "qty": 0.5,
+          "unit": "muỗng cà phê"
+        },
+        {
+          "name": "Hạt nêm chay",
+          "qty": 0.5,
+          "unit": "muỗng canh"
+        },
+        {
+          "name": "Dầu ăn",
+          "qty": 2,
+          "unit": "muỗng canh"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
+          "images": [
+            "/img/step1a.jpg",
+            "/img/step1b.jpg",
+            "/img/step1c.jpg"
+          ]
+        },
+        {
+          "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
+          "images": [
+            "/img/step2a.jpg",
+            "/img/step2b.jpg"
+          ]
+        },
+        {
+          "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
+          "images": [
+            "/img/step3.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "202",
+      "title": "Sinh tố xoài",
+      "image": "/img/sinh-to-xoai.jpg",
+      "tags": [
+        "do-uong",
+        "ngot"
+      ],
+      "prepTime": 10,
+      "cookTime": 0,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Xoài chín",
+          "qty": 2,
+          "unit": "quả"
+        },
+        {
+          "name": "Sữa tươi",
+          "qty": 200,
+          "unit": "ml"
+        },
+        {
+          "name": "Đá viên",
+          "qty": 6,
+          "unit": "viên"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Gọt vỏ xoài, cắt miếng nhỏ.",
+          "images": [
+            "/img/step1-sinh-to.jpg"
+          ]
+        },
+        {
+          "text": "Cho xoài, sữa, đá vào máy xay và xay mịn.",
+          "images": [
+            "/img/step2-sinh-to.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "favorites": [
+    {
+      "userId": 3,
+      "foodId": 202,
+      "id": "0c99"
+    }
+  ],
+  "collections": [
+    {
+      "id": "1",
+      "userId": 3,
+      "name": "All"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "name": "Đồ uống yêu thích"
+    }
+  ],
+  "collectionItems": [
+    {
+      "collectionId": 1,
+      "foodId": 1,
+      "id": "5fd8"
+    },
+    {
+      "collectionId": 2,
+      "foodId": 202,
+      "id": "e61c"
+    }
+  ]
+}
