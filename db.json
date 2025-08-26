@@ -17,7 +17,7 @@
     {
       "id": "3",
       "name": "Nguyen User",
-      "email": "ducnamle@gmail.com",
+      "email": "ducnamle432@gmail.com",
       "password": "Nam202303",
       "role": "USER"
     },
@@ -246,73 +246,73 @@
       "label": "Mỹ"
     }
   ],
-  "food": [
-    {
-      "id": "1",
-      "title": "Canh bí đao chay đơn giản",
-      "image": "https://monngonmoingay.com/wp-content/smush-webp/2015/08/AGF-1791-canh-bi-dao-nau-suon-non.png.webp",
-      "tags": [
-        "chay"
-      ],
-      "prepTime": 10,
-      "cookTime": 15,
-      "difficulty": "Dễ",
-      "ingredients": [
-        {
-          "name": "Bí đao",
-          "qty": 1,
-          "unit": "trái (500g)"
-        },
-        {
-          "name": "Tỏi",
-          "qty": 2,
-          "unit": "tép"
-        },
-        {
-          "name": "Hành lá",
-          "qty": 1,
-          "unit": "nhánh"
-        },
-        {
-          "name": "Muối",
-          "qty": 0.5,
-          "unit": "muỗng cà phê"
-        },
-        {
-          "name": "Hạt nêm chay",
-          "qty": 0.5,
-          "unit": "muỗng canh"
-        },
-        {
-          "name": "Dầu ăn",
-          "qty": 2,
-          "unit": "muỗng canh"
-        }
-      ],
-      "steps": [
-        {
-          "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
-          "images": [
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-146.jpg",
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-147.jpg",
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-148.jpg"
-          ]
-        },
-        {
-          "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
-          "images": [
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-33.jpg",
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-34.jpg"
-          ]
-        },
-        {
-          "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
-          "images": [
-            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
-          ]
-        }
-      ]
-    },
+    "food": [
+      {
+        "id": "1",
+        "title": "Canh bí đao chay đơn giản",
+        "image": "https://monngonmoingay.com/wp-content/smush-webp/2015/08/AGF-1791-canh-bi-dao-nau-suon-non.png.webp",
+        "tags": [
+          "chay"
+        ],
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Dễ",
+        "ingredients": [
+          {
+            "name": "Bí đao",
+            "qty": 1,
+            "unit": "trái (500g)"
+          },
+          {
+            "name": "Tỏi",
+            "qty": 2,
+            "unit": "tép"
+          },
+          {
+            "name": "Hành lá",
+            "qty": 1,
+            "unit": "nhánh"
+          },
+          {
+            "name": "Muối",
+            "qty": 0.5,
+            "unit": "muỗng cà phê"
+          },
+          {
+            "name": "Hạt nêm chay",
+            "qty": 0.5,
+            "unit": "muỗng canh"
+          },
+          {
+            "name": "Dầu ăn",
+            "qty": 2,
+            "unit": "muỗng canh"
+          }
+        ],
+        "steps": [
+          {
+            "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
+            "images": [
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-146.jpg",
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-147.jpg",
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-148.jpg"
+            ]
+          },
+          {
+            "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
+            "images": [
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-33.jpg",
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-34.jpg"
+            ]
+          },
+          {
+            "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
+            "images": [
+              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
+            ]
+          }
+        ]
+      },
     {
       "id": "202",
       "title": "Sinh tố xoài",

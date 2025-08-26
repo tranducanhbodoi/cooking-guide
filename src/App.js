@@ -38,7 +38,7 @@ export default function App() {
 
         {/* User */}
         <Route
-          path="/user"
+          path="/user/*"
           element={role === "user" ? <UserPage /> : <Navigate to="/login" replace />}
         />
 
