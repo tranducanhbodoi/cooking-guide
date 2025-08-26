@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./components/Login";
 import AdminPage from "./components/AdminPage";
 import ChefPage from "./components/ChefPage";
 import UserPage from "./components/UserPage";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import EditFoodPage from "./components/EditFoodPage";
 import CreateFoodPage from "./components/CreateFoodPage";
 
@@ -15,29 +15,36 @@ export default function App() {
     setRole(null);
   };
 
-  if (!role) {
-    return <Login onLogin={(r) => setRole(r.toLowerCase())} />;
-  }
-
   return (
     <BrowserRouter>
-      <div style={{ padding: "20px" }}>
-        {role === "admin" && <AdminPage />}
-        {role === "chef" && (
-          <Routes>
-            <Route path="/chef" element={<ChefPage />} />
-            <Route path="/chef/food/create" element={<CreateFoodPage />} />
-            <Route path="/chef/food/edit/:id" element={<EditFoodPage />} />
-            <Route path="*" element={<Navigate to="/chef" replace />} />
-          </Routes>
-        )}
-        {role === "user" && <UserPage />}
+      <Routes>
+        {/* Nếu chưa login → redirect về /login */}
+        <Route
+          path="/login"
+          element={!role ? <Login onLogin={(r) => setRole(r.toLowerCase())} /> : <Navigate to={`/${role}`} replace />}
+        />
 
-        <button onClick={handleLogout} style={{ marginTop: "20px" }}>
-          Đăng xuất
-        </button>
-      </div>
+        {/* Admin */}
+        <Route
+          path="/admin"
+          element={role === "admin" ? <AdminPage onLogout={handleLogout} /> : <Navigate to="/login" replace />}
+        />
+
+        {/* Chef */}
+        <Route
+          path="/chef/*"
+          element={role === "chef" ? <ChefPage /> : <Navigate to="/login" replace />}
+        />
+
+        {/* User */}
+        <Route
+          path="/user"
+          element={role === "user" ? <UserPage /> : <Navigate to="/login" replace />}
+        />
+
+        {/* Default */}
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
     </BrowserRouter>
-
   );
 }
