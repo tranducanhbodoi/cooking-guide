@@ -1,32 +1,28 @@
-import { ListGroup } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { Box, Heart, Collection } from "react-bootstrap-icons";
+import "./Sidebar.css";
 
 const items = [
-  { to: "/user/all", label: "All" },
-  { to: "/user/mon-chinh", label: "Món chính" },
-  { to: "/user/mon-phu", label: "Món phụ" },
-  { to: "/user/do-uong", label: "Đồ uống" },
-  { to: "/user/favorite", label: "Yêu thích" },
-  { to: "/user/collections", label: "Collections" },
+  { to: "/user/all", label: "Sản phẩm", icon: <Box size={20} /> },
+  { to: "/user/favorite", label: "Yêu thích", icon: <Heart size={20} /> },
+  { to: "/user/collections", label: "Bộ sưu tập", icon: <Collection size={20} /> },
 ];
 
 export default function Sidebar() {
   return (
-    <ListGroup>
+    <div className="sidebar">
       {items.map((it) => (
-        <ListGroup.Item key={it.to} className="p-0">
-          <NavLink
-            to={it.to}
-            className={({ isActive }) =>
-              `d-block px-3 py-2 text-decoration-none ${
-                isActive ? "active-link" : ""
-              }`
-            }
-          >
-            {it.label}
-          </NavLink>
-        </ListGroup.Item>
+        <NavLink
+          key={it.to}
+          to={it.to}
+          className={({ isActive }) =>
+            `sidebar-item ${isActive ? "active" : ""}`
+          }
+        >
+          <span className="icon">{it.icon}</span>
+          <span className="label">{it.label}</span>
+        </NavLink>
       ))}
-    </ListGroup>
+    </div>
   );
 }
