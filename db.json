@@ -200,7 +200,7 @@
     {
       "id": "1",
       "title": "Canh bí đao chay đơn giản",
-      "image": "/img/canh-bi-dao.jpg",
+      "image": "https://monngonmoingay.com/wp-content/smush-webp/2015/08/AGF-1791-canh-bi-dao-nau-suon-non.png.webp",
       "tags": [
         "chay"
       ],
@@ -243,22 +243,22 @@
         {
           "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
           "images": [
-            "/img/step1a.jpg",
-            "/img/step1b.jpg",
-            "/img/step1c.jpg"
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-146.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-147.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-148.jpg"
           ]
         },
         {
           "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
           "images": [
-            "/img/step2a.jpg",
-            "/img/step2b.jpg"
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-33.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-34.jpg"
           ]
         },
         {
           "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
           "images": [
-            "/img/step3.jpg"
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
           ]
         }
       ]
@@ -266,7 +266,7 @@
     {
       "id": "202",
       "title": "Sinh tố xoài",
-      "image": "/img/sinh-to-xoai.jpg",
+      "image": "https://cdn.tgdd.vn/2021/11/CookDish/cach-lam-sinh-to-xoai-voi-sua-thom-ngon-hap-dan-giai-nhiet-avt-1200x676.jpg",
       "tags": [
         "do-uong",
         "ngot"
@@ -295,13 +295,13 @@
         {
           "text": "Gọt vỏ xoài, cắt miếng nhỏ.",
           "images": [
-            "/img/step1-sinh-to.jpg"
+            "https://cdn.tgdd.vn/2021/11/CookRecipe/GalleryStep/so-che-xoai-1.jpg"
           ]
         },
         {
           "text": "Cho xoài, sữa, đá vào máy xay và xay mịn.",
           "images": [
-            "/img/step2-sinh-to.jpg"
+            "https://cdn.tgdd.vn/2021/11/CookRecipe/GalleryStep/xay-sinh-to-xoai-1.jpg"
           ]
         }
       ]
