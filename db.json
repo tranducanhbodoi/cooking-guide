@@ -305,6 +305,741 @@
           ]
         }
       ]
+    },
+    {
+      "id": "hroimerv6ejd",
+      "title": "Planter’s punch",
+      "image": "https://www.hoteljob.vn/files/Anh-HTJ-Hong/cach-pha-cac-loai-cocktail-pho-bien-nhat-9.jpg",
+      "tags": [
+        "cocktail",
+        "my",
+        "do-uong"
+      ],
+      "prepTime": 5,
+      "cookTime": 5,
+      "difficulty": "Khó",
+      "ingredients": [
+        {
+          "name": "rum nâu",
+          "qty": 0,
+          "unit": "60ml"
+        },
+        {
+          "name": "nước cam",
+          "qty": 0,
+          "unit": "15ml"
+        },
+        {
+          "name": "nước cốt chanh",
+          "qty": 0,
+          "unit": "10ml"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Cho nguyên liệu vào shaker và lắc đều với đá nhuyễn",
+          "images": [
+            "data:image/jpeg;base64,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"
+          ]
+        },
+        {
+          "text": "rót ra ly Hurrican hoặc ly Tumbler rồi trang trí với vài lát cam, chanh và trái cherry",
+          "images": [
+            "https://s-media-cache-ak0.pinimg.com/originals/1c/ea/d1/1cead147608b3276d02a622c6e294bd1.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6zymerv9c2b",
+      "title": "Mojito",
+      "image": "https://www.hoteljob.vn/files/Anh-HTJ-Hong/cach-pha-cac-loai-cocktail-pho-bien-nhat-2.jpg",
+      "tags": [
+        "cocktail",
+        "my",
+        "do-uong"
+      ],
+      "prepTime": 5,
+      "cookTime": 5,
+      "difficulty": "Khó",
+      "ingredients": [
+        {
+          "name": "rum trắng",
+          "qty": 0,
+          "unit": "30ml"
+        },
+        {
+          "name": "rum nâu",
+          "qty": 0,
+          "unit": "30ml"
+        },
+        {
+          "name": "aricot brandy",
+          "qty": 0,
+          "unit": "15ml"
+        },
+        {
+          "name": "cherry brandy",
+          "qty": 0,
+          "unit": "15ml"
+        },
+        {
+          "name": "nước cam",
+          "qty": 0,
+          "unit": "60ml"
+        },
+        {
+          "name": "nước chanh",
+          "qty": 0,
+          "unit": "16ml"
+        }
+      ],
+      "steps": [
+        {
+          "text": "cho nguyên liệu vào shaker và lắc đều với đá viên",
+          "images": [
+            "https://www.hoteljob.vn/files/Anh-HTJ-Hong/cach-pha-cac-loai-cocktail-pho-bien-nhat-7.jpg"
+          ]
+        },
+        {
+          "text": "rót thức uống ra ly đã cho sẵn vài viên đá - dùng bằng ống hút",
+          "images": [
+            "https://www.hoteljob.vn/files/Anh-HTJ-Hong/cach-pha-cac-loai-cocktail-pho-bien-nhat-10.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mmkomervhnjz",
+      "title": "Bánh flan",
+      "image": "https://cdn.tgdd.vn/2021/09/CookDish/2-cach-lam-banh-flan-sua-tuoi-rau-cau-thom-ngon-don-gian-avt-1200x676.jpg",
+      "tags": [
+        "trang-mieng",
+        "nhat-ban"
+      ],
+      "prepTime": 0,
+      "cookTime": 0,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Trứng gà",
+          "qty": 4,
+          "unit": "quả"
+        },
+        {
+          "name": "Lòng đỏ trứng gà",
+          "qty": 6,
+          "unit": "cái"
+        },
+        {
+          "name": "Sữa tươi không đường",
+          "qty": 0,
+          "unit": "500 ml"
+        },
+        {
+          "name": "Đường",
+          "qty": 0,
+          "unit": "170 gr"
+        },
+        {
+          "name": "Nước cốt chanh",
+          "qty": 1,
+          "unit": "muỗng canh"
+        },
+        {
+          "name": "Nước",
+          "qty": 0,
+          "unit": "170 ml"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Đun caramel\nĐầu tiên, cho vào nồi 120gr đường, 100ml nước rồi đun sôi (không khuấy) trên bếp với lửa nhỏ nhất.\n\nKhi thấy nước đường hơi ngả màu vàng nhạt, bạn cho vào thêm 1 muỗng canh nước cốt chanh. Tiếp tục nấu đến khi đường chuyển thành màu nâu cánh gián thì tắt bếp.\n\nKế đến, cho vào nồi 70ml nước lọc, cầm nồi lắc tròn cho hỗn hợp hòa quyện với nhau.\n\nCuối cùng, đổ 1 muỗng canh caramel vừa làm vào từng khuôn bán flan và để trong ngăn mát tủ lạnh cho đông lại.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/dun-caramel-1.jpg"
+          ]
+        },
+        {
+          "text": "Khuấy hỗn hợp trứng sữa\nCho vào tô 6 lòng đỏ trứng, 4 quả trứng (cả lòng đỏ và lòng trắng), 50gr đường rồi khuấy nhẹ nhàng theo một chiều và tránh để tạo nhiều bọt khí.\n\nTiếp đến, bạn đun 500ml sữa tươi không đường đến khi mặt sữa bốc hơi nóng (không đun sôi). Sau đó đổ từ từ sữa vào tô trứng, vừa đổ vừa khuấy cho hòa quyện.\n\nCuối cùng, lọc hỗn hợp trứng sữa qua rây để loại bỏ cặn và sánh mịn hơn.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/khuay-hon-hop-trung-sua-2.jpg"
+          ]
+        },
+        {
+          "text": "Đổ khuôn bánh\nĐổ từ từ hỗn hợp sữa trứng vào khuôn bánh caramel, bạn nhớ nghiêng khuôn và rót nhẹ để không tạo bọt khí, nếu không bánh sẽ bị rỗ sau khi hấp.\n\nTiếp theo, đậy kín nắp khuôn bánh lại.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/do-khuon-banh.jpg"
+          ]
+        },
+        {
+          "text": "Hấp bánh\nKế đến, xếp bánh vào xửng, đặt xửng lên 1 nồi nước sôi. Đậy nắp nồi và hấp bánh trên lửa nhỏ vừa trong vòng 20 phút.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/hap-banh-29.jpg"
+          ]
+        },
+        {
+          "text": "Thành phẩm\nBánh flan sữa tươi siêu láng mịn và không bị rỗ, từng muỗng bánh mềm mại, béo ngậy quyện đều với caramel ngọt thơm, cực kỳ ngon đó nha.\n\nBạn có thể dùng kèm bánh với đá viên đập nhuyễn và một ít cà phê sẽ càng thêm hấp dẫn hơn đấy!",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/thanh-pham-1789.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5b68merw0wou",
+      "title": "Pizza",
+      "image": "https://img.dominos.vn/thumbnail34.jpg",
+      "tags": [
+        "y",
+        "mon-chinh"
+      ],
+      "prepTime": 15,
+      "cookTime": 30,
+      "difficulty": "Khó",
+      "ingredients": [
+        {
+          "name": "bột mì",
+          "qty": 0,
+          "unit": ""
+        },
+        {
+          "name": "men",
+          "qty": 0,
+          "unit": ""
+        },
+        {
+          "name": "nước",
+          "qty": 0,
+          "unit": ""
+        },
+        {
+          "name": "dầu ăn",
+          "qty": 0,
+          "unit": ""
+        },
+        {
+          "name": "đường",
+          "qty": 0,
+          "unit": ""
+        },
+        {
+          "name": "muối",
+          "qty": 0,
+          "unit": ""
+        }
+      ],
+      "steps": [
+        {
+          "text": "Bước 1: Chuẩn bị bột pizza đã được ủ theo quy chuẩn. \n\nPhần đế bánh được làm từ bột mì, men, nước, dầu ăn, đường, muối sẽ được bảo quản lạnh tối đa 7 ngày. Trước khi sử dụng sẽ xả lạnh 15 phút, điều này giúp men hoạt động tốt và làm cho bánh ngon hơn.",
+          "images": []
+        },
+        {
+          "text": "Bước 2: Nặn thành đế bánh với bột bắp (Dough bột).\n\nDùng tay nặn phần bột pizza với bột bắp thành để tạo hình tròn với các đường kính khác nhau như 7\", 9\", 12\" tùy vào kích thước yêu cầu. Đế bánh chuẩn hand-tossed sẽ có phần lề nhỏ bên ngoài viền được tạo hình khéo léo bởi người làm bánh.",
+          "images": []
+        },
+        {
+          "text": "Bước 3: Phủ xốt.\n\nXốt pizza sau khi được pha theo tỷ lệ chuẩn (tùy loại pizza mà sẽ có loại xốt phù hợp), đảm bảo không quá đặc cũng không quá lỏng. Sau đó phủ đều xốt lên trên mặt bánh đã nặn.",
+          "images": []
+        },
+        {
+          "text": "Bước 4: Phủ phô mai lần 1.\n\nSau khi đã quét xốt, phủ đều 1 lớp phô mai cắt sợi lên mặt bánh.",
+          "images": []
+        },
+        {
+          "text": "Bước 5: Phủ topping.\n\nTùy từng loại pizza mà sẽ có những topping phù hợp. Những nguyên liệu làm nhân bánh ở Domino’s Pizza đều đạt tiêu chuẩn quốc tế, đảm bảo chất lượng hảo hạng và an toàn thực phẩm theo tiêu chuẩn NSF về an toàn thực phẩm và nước uống của Tổ chức Y tế Thế giới (WHO). Ở bước này, bạn sẽ rải đều các loại topping pizza lên trên mặt bánh.",
+          "images": []
+        },
+        {
+          "text": "Bước 6: Phủ phô mai lần 2.\n\nTiếp đến là phủ thêm một lớp phô mai cắt sợi nữa lên trên mặt bánh. Đến đây là đã hoàn thành phần nhân bánh pizza rồi.",
+          "images": []
+        },
+        {
+          "text": "Bước 7: Nướng bánh qua lò.\n\nCho bánh vào lò và nướng ở nhiệt độ 240 độ C trong thời gian 5.5 phút. Sau khi nướng xong, bạn lấy bánh pizza thành phẩm ra khỏi lò, dùng dao cắt thành các miếng theo size (7\": 4 miếng, 9\": 6 miếng, 12\": 8 miếng) và thưởng thức.",
+          "images": [
+            "https://img.dominos.vn/cach-lam-banh-pizza-1.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "301",
+      "title": "Phở bò Hà Nội",
+      "image": "https://cdnv2.tgdd.vn/mwg-static/common/Common/312025%20%281200%20x%20676%20px%29%20%284%29.jpg",
+      "tags": [
+        "viet-nam",
+        "mon-chinh"
+      ],
+      "prepTime": 30,
+      "cookTime": 60,
+      "difficulty": "Khó",
+      "ingredients": [
+        {
+          "name": "Bánh phở",
+          "qty": 500,
+          "unit": "g"
+        },
+        {
+          "name": "Thịt bò",
+          "qty": 400,
+          "unit": "g"
+        },
+        {
+          "name": "Hành tây",
+          "qty": 1,
+          "unit": "củ"
+        },
+        {
+          "name": "Gừng",
+          "qty": 1,
+          "unit": "củ nhỏ"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Nướng hành, gừng cho thơm rồi cho vào nồi nước dùng.",
+          "images": [
+            "https://cdn.tgdd.vn/2025/01/CookRecipe/GalleryStep/ninh-xuong-bo-1.jpg"
+          ]
+        },
+        {
+          "text": "Cho thịt bò thái lát vào chần qua, rồi chan nước dùng, thêm hành lá.",
+          "images": [
+            "https://cdn.tgdd.vn/2025/01/CookRecipe/GalleryStep/so-che-thit-bap-bo-1.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "302",
+      "title": "Bún chả Hà Nội",
+      "image": "https://cdn.tgdd.vn/2022/01/CookDish/huong-dan-cach-lam-bun-cha-ha-noi-thom-ngon-nhu-ngoai-hang-avt-1200x676.jpg",
+      "tags": [
+        "viet-nam",
+        "mon-chinh"
+      ],
+      "prepTime": 25,
+      "cookTime": 30,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Thịt ba chỉ",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "name": "Thịt nạc vai",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Bún tươi",
+          "qty": 500,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Ướp thịt với gia vị rồi nướng trên than hoa.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/so-che-va-uop-thit-6.jpg"
+          ]
+        },
+        {
+          "text": "Pha nước mắm chua ngọt, ăn kèm rau sống và bún.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-khac-403.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "303",
+      "title": "Bánh mì thịt nướng",
+      "image": "https://cdnv2.tgdd.vn/mwg-static/common/Common/05052025%20-%202025-05-08T135413.854.jpg",
+      "tags": [
+        "viet-nam",
+        "an-sang"
+      ],
+      "prepTime": 15,
+      "cookTime": 20,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Bánh mì",
+          "qty": 2,
+          "unit": "ổ"
+        },
+        {
+          "name": "Thịt nướng",
+          "qty": 200,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Nướng thịt cho vàng đều.",
+          "images": [
+            "https://cdn.tgdd.vn/2025/05/CookRecipe/GalleryStep/nuong-thit.jpg"
+          ]
+        },
+        {
+          "text": "Kẹp vào bánh mì cùng rau thơm, dưa leo, đồ chua.",
+          "images": [
+            "https://cdn.tgdd.vn/2025/05/CookRecipe/GalleryStep/thuong-thuc.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "304",
+      "title": "Cơm tấm sườn bì chả",
+      "image": "https://pastaxi-manager.onepas.vn/content/uploads/articles/vuonghoai/cach-lam-com-tam-suon-bi-cha/cach-lam-com-tam-suon-bi-cha-1.jpg",
+      "tags": [
+        "viet-nam",
+        "mon-chinh"
+      ],
+      "prepTime": 20,
+      "cookTime": 40,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Sườn heo",
+          "qty": 300,
+          "unit": "g"
+        },
+        {
+          "name": "Cơm tấm",
+          "qty": 2,
+          "unit": "dĩa"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Ướp sườn, nướng than cho vàng.",
+          "images": [
+            "https://pastaxi-manager.onepas.vn/content/uploads/articles/vuonghoai/cach-lam-com-tam-suon-bi-cha/cach-lam-com-tam-suon-bi-cha-2.jpg"
+          ]
+        },
+        {
+          "text": "Ăn kèm cơm tấm, bì, chả và nước mắm chua ngọt.",
+          "images": [
+            "https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/vuonghoai/cach-lam-com-tam-suon-bi-cha/cach-lam-com-tam-suon-bi-cha-6.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "306",
+      "title": "Lẩu Thái chua cay",
+      "image": "https://cdn.tgdd.vn/2020/12/CookProduct/thaithum-1200x676.jpg",
+      "tags": [
+        "mon-chinh",
+        "hai-san"
+      ],
+      "prepTime": 30,
+      "cookTime": 40,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Tôm",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Nấm",
+          "qty": 100,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Nấu nước lẩu chua cay với sả, lá chanh.",
+          "images": [
+            "https://cdn.tgdd.vn/2020/12/CookRecipe/GalleryStep/nau-nuoc-lau-8.jpg"
+          ]
+        },
+        {
+          "text": "Cho hải sản, rau vào nồi, ăn nóng.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/12/CookRecipe/Avatar/59.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "307",
+      "title": "Sushi cá hồi",
+      "image": "data:image/jpeg;base64,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",
+      "tags": [
+        "nhat-ban",
+        "mon-chinh"
+      ],
+      "prepTime": 20,
+      "cookTime": 15,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Cơm sushi",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Cá hồi",
+          "qty": 150,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Ép cơm thành viên nhỏ, đặt cá hồi lên trên.",
+          "images": [
+            "https://gofood.vn/upload/r/tong-hop-tin-tuc/huong-dan-mon-ngon/sushi-ca-hoi-nigiri.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "308",
+      "title": "Kimchi Hàn Quốc",
+      "image": "data:image/jpeg;base64,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",
+      "tags": [
+        "han-quoc",
+        "mon-phu"
+      ],
+      "prepTime": 40,
+      "cookTime": 0,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Cải thảo",
+          "qty": 1,
+          "unit": "cái"
+        },
+        {
+          "name": "Ớt bột",
+          "qty": 50,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Trộn cải thảo với muối, sau đó rửa sạch.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cai-thao-7.jpg"
+          ]
+        },
+        {
+          "text": "Phết hỗn hợp gia vị lên từng lá cải.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/lam-sot-muoi-kim-chi-8.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "309",
+      "title": "Mì ramen Nhật Bản",
+      "image": "https://cdn.tgdd.vn/2021/03/CookProduct/1200-1200x676-49.jpg",
+      "tags": [
+        "nhat-ban",
+        "mon-chinh"
+      ],
+      "prepTime": 25,
+      "cookTime": 40,
+      "difficulty": "Khó",
+      "ingredients": [
+        {
+          "name": "Mì ramen",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Trứng luộc",
+          "qty": 2,
+          "unit": "quả"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Nấu nước dùng từ xương heo, miso.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/03/content/2-800x450-22.jpg"
+          ]
+        },
+        {
+          "text": "Thêm mì, trứng, rau củ vào tô, chan nước dùng.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/03/content/shio-ramen-800x450.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "310",
+      "title": "Bò lúc lắc",
+      "image": "https://cdn.tgdd.vn/2021/07/CookProduct/1200-1200x676-84.jpg",
+      "tags": [
+        "viet-nam",
+        "thit-do"
+      ],
+      "prepTime": 15,
+      "cookTime": 20,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Thịt bò",
+          "qty": 300,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Xào thịt bò với hành tây, ớt chuông.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/07/CookRecipe/GalleryStep/lam-bo-luc-lac-2.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "311",
+      "title": "Bánh xèo",
+      "image": "https://cdn.tgdd.vn/2021/04/CookProduct/1200-1200x676-70.jpg",
+      "tags": [
+        "viet-nam",
+        "mon-chinh"
+      ],
+      "prepTime": 20,
+      "cookTime": 25,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Bột gạo",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Thịt heo",
+          "qty": 150,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Đổ bột vào chảo, thêm nhân tôm thịt, giá đỗ.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/04/CookRecipe/GalleryStep/do-banh-xeo-1.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "312",
+      "title": "Bánh ngọt tiramisu",
+      "image": "https://cdn.tgdd.vn/2021/04/CookProduct/Untitled-1-1200x676-27.jpg",
+      "tags": [
+        "y",
+        "trang-mieng"
+      ],
+      "prepTime": 30,
+      "cookTime": 0,
+      "difficulty": "Trung bình",
+      "ingredients": [
+        {
+          "name": "Bánh ladyfinger",
+          "qty": 200,
+          "unit": "g"
+        },
+        {
+          "name": "Phô mai mascarpone",
+          "qty": 250,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Xếp bánh, phết kem, rắc cacao, để lạnh.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/04/CookRecipe/GalleryStep/thanh-pham-1812.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "313",
+      "title": "Cà phê sữa đá",
+      "image": "https://cdn.tgdd.vn/2021/09/CookProduct/Cach-pha-ly-ca-phe-sua-da-3-tang-tao-bot-thom-ngon-nhu-ngoai-quan-13-11-screenshot-1200x676.jpg",
+      "tags": [
+        "ca-phe",
+        "do-uong"
+      ],
+      "prepTime": 5,
+      "cookTime": 5,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Cà phê phin",
+          "qty": 25,
+          "unit": "g"
+        },
+        {
+          "name": "Sữa đặc",
+          "qty": 40,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Pha cà phê phin với nước sôi.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/pha-ca-phe-19.jpg"
+          ]
+        },
+        {
+          "text": "Khuấy cùng sữa đặc, thêm đá.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/thanh-pham-643.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "314",
+      "title": "Trà sữa trân châu",
+      "image": "https://cdn.tgdd.vn/2021/04/CookProduct/BeFunky-project(9)-1200x676.jpg",
+      "tags": [
+        "tra",
+        "do-uong"
+      ],
+      "prepTime": 15,
+      "cookTime": 15,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Trà đen",
+          "qty": 10,
+          "unit": "g"
+        },
+        {
+          "name": "Sữa tươi",
+          "qty": 150,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Ủ trà, thêm sữa, đường, đá.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/ngam-tra-1.jpg"
+          ]
+        },
+        {
+          "text": "Cho trân châu đã nấu vào ly, rót trà sữa.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/thanh-pham-1163.jpg"
+          ]
+        }
+      ]
     }
   ],
   "favorites": [
