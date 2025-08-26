@@ -8,13 +8,13 @@ import Food from "../pages/Food";
 import FoodDetail from "../pages/FoodDetail";
 
 import "./style.css"
-export default function UserPage() {
+export default function UserPage({ onLogout }) {
   return (
     <>
-      {/* Hàng trên: logo (4) + search (7) + avatar (1) */}
-      <Header />
+      
+      <Header onLogout={onLogout}/>
 
-      {/* Bên dưới: sidebar trái (2) + vùng chính (10) */}
+      
       <Container fluid className="mt-3">
         <Row>
           <Col md={2} className="mb-3">
@@ -24,13 +24,10 @@ export default function UserPage() {
           <Col md={10}>
             <Routes>
               <Route path="/" element={<Navigate to="all" replace />} />
-              <Route path="/all" element={<Food mode="all" />} />
-              <Route path="/mon-chinh" element={<Food mode="mon-chinh" />} />
-              <Route path="/mon-phu" element={<Food mode="mon-phu" />} />
-              <Route path="/do-uong" element={<Food mode="do-uong" />} />
-              <Route path="/favorite" element={<Food mode="favorite" />} />
-              <Route path="/collections" element={<Food mode="collections" />} />
-              <Route path="/food/:id" element={<FoodDetail />} />
+              <Route path="all" element={<Food mode="all" />} />
+              <Route path="favorite" element={<Food mode="favorite" />} />
+              <Route path="collections" element={<Food mode="collections" />} />
+              <Route path="food/:id" element={<FoodDetail />} />
               <Route path="*" element={<div>404 — Không tìm thấy trang</div>} />
             </Routes>
           </Col>

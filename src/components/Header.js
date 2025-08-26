@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { SearchContext } from "../context/SearchContext";
 
-export default function Header() {
+export default function Header({ onLogout }) {
   const [users, setUsers] = useState([]);
   const [currentUser, setUser] = useState(null);
   const {search, setSearch} = useContext(SearchContext);
@@ -48,7 +48,7 @@ export default function Header() {
           </Col>
 
           <Col md={1} xs={2} className="text-end">
-            <AvatarMenu user={currentUser} />
+            <AvatarMenu user={currentUser} onLogout={onLogout}/>
           </Col>
         </Row>
       </Container>

@@ -28,56 +28,356 @@
       "password": "tranducanh123",
       "role": "USER"
     },
-    {"id":"4","name":"User Four","email":"user4@example.com","password":"pass4","role":"USER"},
-    {"id":"5","name":"Chef A","email":"chef.a@example.com","password":"chef1","role":"CHEF"},
-    {"id":"6","name":"Admin X","email":"admin.x@example.com","password":"admin1","role":"ADMIN"},
-    {"id":"7","name":"User Five","email":"user5@example.com","password":"pass5","role":"USER"},
-    {"id":"8","name":"User Six","email":"user6@example.com","password":"pass6","role":"USER"},
-    {"id":"9","name":"Chef B","email":"chef.b@example.com","password":"chef2","role":"CHEF"},
-    {"id":"10","name":"User Seven","email":"user7@example.com","password":"pass7","role":"USER"},
-    {"id":"11","name":"Admin Y","email":"admin.y@example.com","password":"admin2","role":"ADMIN"},
-    {"id":"12","name":"User Eight","email":"user8@example.com","password":"pass8","role":"USER"},
-    {"id":"13","name":"User Nine","email":"user9@example.com","password":"pass9","role":"USER"},
-    {"id":"14","name":"Chef C","email":"chef.c@example.com","password":"chef3","role":"CHEF"},
-    {"id":"15","name":"User Ten","email":"user10@example.com","password":"pass10","role":"USER"},
-    {"id":"16","name":"Admin Z","email":"admin.z@example.com","password":"admin3","role":"ADMIN"},
-    {"id":"17","name":"User Eleven","email":"user11@example.com","password":"pass11","role":"USER"},
-    {"id":"18","name":"User Twelve","email":"user12@example.com","password":"pass12","role":"USER"},
-    {"id":"19","name":"Chef D","email":"chef.d@example.com","password":"chef4","role":"CHEF"},
-    {"id":"20","name":"User Thirteen","email":"user13@example.com","password":"pass13","role":"USER"},
-    {"id":"21","name":"Admin A1","email":"admin.a1@example.com","password":"admin4","role":"ADMIN"},
-    {"id":"22","name":"User Fourteen","email":"user14@example.com","password":"pass14","role":"USER"},
-    {"id":"23","name":"User Fifteen","email":"user15@example.com","password":"pass15","role":"USER"},
-    {"id":"24","name":"Chef E","email":"chef.e@example.com","password":"chef5","role":"CHEF"},
-    {"id":"25","name":"User Sixteen","email":"user16@example.com","password":"pass16","role":"USER"},
-    {"id":"26","name":"Admin B1","email":"admin.b1@example.com","password":"admin5","role":"ADMIN"},
-    {"id":"27","name":"User Seventeen","email":"user17@example.com","password":"pass17","role":"USER"},
-    {"id":"28","name":"User Eighteen","email":"user18@example.com","password":"pass18","role":"USER"},
-    {"id":"29","name":"Chef F","email":"chef.f@example.com","password":"chef6","role":"CHEF"},
-    {"id":"30","name":"User Nineteen","email":"user19@example.com","password":"pass19","role":"USER"},
-    {"id":"31","name":"Admin C1","email":"admin.c1@example.com","password":"admin6","role":"ADMIN"},
-    {"id":"32","name":"User Twenty","email":"user20@example.com","password":"pass20","role":"USER"},
-    {"id":"33","name":"User Twenty-One","email":"user21@example.com","password":"pass21","role":"USER"},
-    {"id":"34","name":"Chef G","email":"chef.g@example.com","password":"chef7","role":"CHEF"},
-    {"id":"35","name":"User Twenty-Two","email":"user22@example.com","password":"pass22","role":"USER"},
-    {"id":"36","name":"Admin D1","email":"admin.d1@example.com","password":"admin7","role":"ADMIN"},
-    {"id":"37","name":"User Twenty-Three","email":"user23@example.com","password":"pass23","role":"USER"},
-    {"id":"38","name":"User Twenty-Four","email":"user24@example.com","password":"pass24","role":"USER"},
-    {"id":"39","name":"Chef H","email":"chef.h@example.com","password":"chef8","role":"CHEF"},
-    {"id":"40","name":"User Twenty-Five","email":"user25@example.com","password":"pass25","role":"USER"},
-    {"id":"41","name":"Admin E1","email":"admin.e1@example.com","password":"admin8","role":"ADMIN"},
-    {"id":"42","name":"User Twenty-Six","email":"user26@example.com","password":"pass26","role":"USER"},
-    {"id":"43","name":"User Twenty-Seven","email":"user27@example.com","password":"pass27","role":"USER"},
-    {"id":"44","name":"Chef I","email":"chef.i@example.com","password":"chef9","role":"CHEF"},
-    {"id":"45","name":"User Twenty-Eight","email":"user28@example.com","password":"pass28","role":"USER"},
-    {"id":"46","name":"Admin F1","email":"admin.f1@example.com","password":"admin9","role":"ADMIN"},
-    {"id":"47","name":"User Twenty-Nine","email":"user29@example.com","password":"pass29","role":"USER"},
-    {"id":"48","name":"User Thirty","email":"user30@example.com","password":"pass30","role":"USER"},
-    {"id":"49","name":"Chef J","email":"chef.j@example.com","password":"chef10","role":"CHEF"},
-    {"id":"50","name":"User Thirty-One","email":"user31@example.com","password":"pass31","role":"USER"},
-    {"id":"51","name":"Admin G1","email":"admin.g1@example.com","password":"admin10","role":"ADMIN"},
-    {"id":"52","name":"User Thirty-Two","email":"user32@example.com","password":"pass32","role":"USER"},
-    {"id":"53","name":"User Thirty-Three","email":"user33@example.com","password":"pass33","role":"USER"}
+    {
+      "id": "4",
+      "name": "User Four",
+      "email": "user4@example.com",
+      "password": "pass4",
+      "role": "USER"
+    },
+    {
+      "id": "5",
+      "name": "Chef A",
+      "email": "chef.a@example.com",
+      "password": "chef1",
+      "role": "CHEF"
+    },
+    {
+      "id": "6",
+      "name": "Admin X",
+      "email": "admin.x@example.com",
+      "password": "admin1",
+      "role": "ADMIN"
+    },
+    {
+      "id": "7",
+      "name": "User Five",
+      "email": "user5@example.com",
+      "password": "pass5",
+      "role": "USER"
+    },
+    {
+      "id": "8",
+      "name": "User Six",
+      "email": "user6@example.com",
+      "password": "pass6",
+      "role": "USER"
+    },
+    {
+      "id": "9",
+      "name": "Chef B",
+      "email": "chef.b@example.com",
+      "password": "chef2",
+      "role": "CHEF"
+    },
+    {
+      "id": "10",
+      "name": "User Seven",
+      "email": "user7@example.com",
+      "password": "pass7",
+      "role": "USER"
+    },
+    {
+      "id": "11",
+      "name": "Admin Y",
+      "email": "admin.y@example.com",
+      "password": "admin2",
+      "role": "ADMIN"
+    },
+    {
+      "id": "12",
+      "name": "User Eight",
+      "email": "user8@example.com",
+      "password": "pass8",
+      "role": "USER"
+    },
+    {
+      "id": "13",
+      "name": "User Nine",
+      "email": "user9@example.com",
+      "password": "pass9",
+      "role": "USER"
+    },
+    {
+      "id": "14",
+      "name": "Chef C",
+      "email": "chef.c@example.com",
+      "password": "chef3",
+      "role": "CHEF"
+    },
+    {
+      "id": "15",
+      "name": "User Ten",
+      "email": "user10@example.com",
+      "password": "pass10",
+      "role": "USER"
+    },
+    {
+      "id": "16",
+      "name": "Admin Z",
+      "email": "admin.z@example.com",
+      "password": "admin3",
+      "role": "ADMIN"
+    },
+    {
+      "id": "17",
+      "name": "User Eleven",
+      "email": "user11@example.com",
+      "password": "pass11",
+      "role": "USER"
+    },
+    {
+      "id": "18",
+      "name": "User Twelve",
+      "email": "user12@example.com",
+      "password": "pass12",
+      "role": "USER"
+    },
+    {
+      "id": "19",
+      "name": "Chef D",
+      "email": "chef.d@example.com",
+      "password": "chef4",
+      "role": "CHEF"
+    },
+    {
+      "id": "20",
+      "name": "User Thirteen",
+      "email": "user13@example.com",
+      "password": "pass13",
+      "role": "USER"
+    },
+    {
+      "id": "21",
+      "name": "Admin A1",
+      "email": "admin.a1@example.com",
+      "password": "admin4",
+      "role": "ADMIN"
+    },
+    {
+      "id": "22",
+      "name": "User Fourteen",
+      "email": "user14@example.com",
+      "password": "pass14",
+      "role": "USER"
+    },
+    {
+      "id": "23",
+      "name": "User Fifteen",
+      "email": "user15@example.com",
+      "password": "pass15",
+      "role": "USER"
+    },
+    {
+      "id": "24",
+      "name": "Chef E",
+      "email": "chef.e@example.com",
+      "password": "chef5",
+      "role": "CHEF"
+    },
+    {
+      "id": "25",
+      "name": "User Sixteen",
+      "email": "user16@example.com",
+      "password": "pass16",
+      "role": "USER"
+    },
+    {
+      "id": "26",
+      "name": "Admin B1",
+      "email": "admin.b1@example.com",
+      "password": "admin5",
+      "role": "ADMIN"
+    },
+    {
+      "id": "27",
+      "name": "User Seventeen",
+      "email": "user17@example.com",
+      "password": "pass17",
+      "role": "USER"
+    },
+    {
+      "id": "28",
+      "name": "User Eighteen",
+      "email": "user18@example.com",
+      "password": "pass18",
+      "role": "USER"
+    },
+    {
+      "id": "29",
+      "name": "Chef F",
+      "email": "chef.f@example.com",
+      "password": "chef6",
+      "role": "CHEF"
+    },
+    {
+      "id": "30",
+      "name": "User Nineteen",
+      "email": "user19@example.com",
+      "password": "pass19",
+      "role": "USER"
+    },
+    {
+      "id": "31",
+      "name": "Admin C1",
+      "email": "admin.c1@example.com",
+      "password": "admin6",
+      "role": "ADMIN"
+    },
+    {
+      "id": "32",
+      "name": "User Twenty",
+      "email": "user20@example.com",
+      "password": "pass20",
+      "role": "USER"
+    },
+    {
+      "id": "33",
+      "name": "User Twenty-One",
+      "email": "user21@example.com",
+      "password": "pass21",
+      "role": "USER"
+    },
+    {
+      "id": "34",
+      "name": "Chef G",
+      "email": "chef.g@example.com",
+      "password": "chef7",
+      "role": "CHEF"
+    },
+    {
+      "id": "35",
+      "name": "User Twenty-Two",
+      "email": "user22@example.com",
+      "password": "pass22",
+      "role": "USER"
+    },
+    {
+      "id": "36",
+      "name": "Admin D1",
+      "email": "admin.d1@example.com",
+      "password": "admin7",
+      "role": "ADMIN"
+    },
+    {
+      "id": "37",
+      "name": "User Twenty-Three",
+      "email": "user23@example.com",
+      "password": "pass23",
+      "role": "USER"
+    },
+    {
+      "id": "38",
+      "name": "User Twenty-Four",
+      "email": "user24@example.com",
+      "password": "pass24",
+      "role": "USER"
+    },
+    {
+      "id": "39",
+      "name": "Chef H",
+      "email": "chef.h@example.com",
+      "password": "chef8",
+      "role": "CHEF"
+    },
+    {
+      "id": "40",
+      "name": "User Twenty-Five",
+      "email": "user25@example.com",
+      "password": "pass25",
+      "role": "USER"
+    },
+    {
+      "id": "41",
+      "name": "Admin E1",
+      "email": "admin.e1@example.com",
+      "password": "admin8",
+      "role": "ADMIN"
+    },
+    {
+      "id": "42",
+      "name": "User Twenty-Six",
+      "email": "user26@example.com",
+      "password": "pass26",
+      "role": "USER"
+    },
+    {
+      "id": "43",
+      "name": "User Twenty-Seven",
+      "email": "user27@example.com",
+      "password": "pass27",
+      "role": "USER"
+    },
+    {
+      "id": "44",
+      "name": "Chef I",
+      "email": "chef.i@example.com",
+      "password": "chef9",
+      "role": "CHEF"
+    },
+    {
+      "id": "45",
+      "name": "User Twenty-Eight",
+      "email": "user28@example.com",
+      "password": "pass28",
+      "role": "USER"
+    },
+    {
+      "id": "46",
+      "name": "Admin F1",
+      "email": "admin.f1@example.com",
+      "password": "admin9",
+      "role": "ADMIN"
+    },
+    {
+      "id": "47",
+      "name": "User Twenty-Nine",
+      "email": "user29@example.com",
+      "password": "pass29",
+      "role": "USER"
+    },
+    {
+      "id": "48",
+      "name": "User Thirty",
+      "email": "user30@example.com",
+      "password": "pass30",
+      "role": "USER"
+    },
+    {
+      "id": "49",
+      "name": "Chef J",
+      "email": "chef.j@example.com",
+      "password": "chef10",
+      "role": "CHEF"
+    },
+    {
+      "id": "50",
+      "name": "User Thirty-One",
+      "email": "user31@example.com",
+      "password": "pass31",
+      "role": "USER"
+    },
+    {
+      "id": "51",
+      "name": "Admin G1",
+      "email": "admin.g1@example.com",
+      "password": "admin10",
+      "role": "ADMIN"
+    },
+    {
+      "id": "52",
+      "name": "User Thirty-Two",
+      "email": "user32@example.com",
+      "password": "pass32",
+      "role": "USER"
+    },
+    {
+      "id": "53",
+      "name": "User Thirty-Three",
+      "email": "user33@example.com",
+      "password": "pass33",
+      "role": "USER"
+    }
   ],
   "tags": [
     {
@@ -246,73 +546,73 @@
       "label": "Mỹ"
     }
   ],
-    "food": [
-      {
-        "id": "1",
-        "title": "Canh bí đao chay đơn giản",
-        "image": "https://monngonmoingay.com/wp-content/smush-webp/2015/08/AGF-1791-canh-bi-dao-nau-suon-non.png.webp",
-        "tags": [
-          "chay"
-        ],
-        "prepTime": 10,
-        "cookTime": 15,
-        "difficulty": "Dễ",
-        "ingredients": [
-          {
-            "name": "Bí đao",
-            "qty": 1,
-            "unit": "trái (500g)"
-          },
-          {
-            "name": "Tỏi",
-            "qty": 2,
-            "unit": "tép"
-          },
-          {
-            "name": "Hành lá",
-            "qty": 1,
-            "unit": "nhánh"
-          },
-          {
-            "name": "Muối",
-            "qty": 0.5,
-            "unit": "muỗng cà phê"
-          },
-          {
-            "name": "Hạt nêm chay",
-            "qty": 0.5,
-            "unit": "muỗng canh"
-          },
-          {
-            "name": "Dầu ăn",
-            "qty": 2,
-            "unit": "muỗng canh"
-          }
-        ],
-        "steps": [
-          {
-            "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
-            "images": [
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-146.jpg",
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-147.jpg",
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-148.jpg"
-            ]
-          },
-          {
-            "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
-            "images": [
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-33.jpg",
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-34.jpg"
-            ]
-          },
-          {
-            "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
-            "images": [
-              "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
-            ]
-          }
-        ]
-      },
+  "food": [
+    {
+      "id": "1",
+      "title": "Canh bí đao chay đơn giản",
+      "image": "https://monngonmoingay.com/wp-content/smush-webp/2015/08/AGF-1791-canh-bi-dao-nau-suon-non.png.webp",
+      "tags": [
+        "chay"
+      ],
+      "prepTime": 10,
+      "cookTime": 15,
+      "difficulty": "Dễ",
+      "ingredients": [
+        {
+          "name": "Bí đao",
+          "qty": 1,
+          "unit": "trái (500g)"
+        },
+        {
+          "name": "Tỏi",
+          "qty": 2,
+          "unit": "tép"
+        },
+        {
+          "name": "Hành lá",
+          "qty": 1,
+          "unit": "nhánh"
+        },
+        {
+          "name": "Muối",
+          "qty": 0.5,
+          "unit": "muỗng cà phê"
+        },
+        {
+          "name": "Hạt nêm chay",
+          "qty": 0.5,
+          "unit": "muỗng canh"
+        },
+        {
+          "name": "Dầu ăn",
+          "qty": 2,
+          "unit": "muỗng canh"
+        }
+      ],
+      "steps": [
+        {
+          "text": "Bí đao gọt vỏ, rửa sạch, cắt lát nhỏ. Tỏi bóc vỏ băm nhuyễn, hành lá rửa sạch cắt nhỏ.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-146.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-147.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-148.jpg"
+          ]
+        },
+        {
+          "text": "Bắc nồi, phi thơm tỏi với dầu ăn, cho bí đao vào đảo đều khoảng 2 phút.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-33.jpg",
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/nau-canh-34.jpg"
+          ]
+        },
+        {
+          "text": "Cho 500ml nước, nêm hạt nêm và muối. Nấu 5 phút, cho hành lá vào và tắt bếp.",
+          "images": [
+            "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
+          ]
+        }
+      ]
+    },
     {
       "id": "202",
       "title": "Sinh tố xoài",
@@ -1094,9 +1394,24 @@
   ],
   "favorites": [
     {
-      "userId": 3,
-      "foodId": 202,
-      "id": "0c99"
+      "id": "cf24",
+      "userId": "3",
+      "foodId": "202"
+    },
+    {
+      "id": "cece",
+      "userId": "3",
+      "foodId": "1"
+    },
+    {
+      "id": "2a5f",
+      "userId": "3",
+      "foodId": "hroimerv6ejd"
+    },
+    {
+      "id": "56d8",
+      "userId": "3",
+      "foodId": "5b68merw0wou"
     }
   ],
   "collections": [

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Row, Col, Card, Button, Badge, Pagination } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import TagFilter from "./TagFilter";
+import FavoriteButton from "../components/FavoriteButton";
 
 import { useContext } from "react";
 import { SearchContext } from "../context/SearchContext";
@@ -9,12 +10,26 @@ import { SearchContext } from "../context/SearchContext";
 export default function Food({ mode }) {
   const [foods, setFoods] = useState([]);
   const [data, setData] = useState([]);
+  const [favFoodIds, setFavFoodIds] = useState([]);
+  const userId = String(localStorage.getItem("userId") || "1");
 
   const { search } = useContext(SearchContext);
   const [selectedTags, setSelectedTags] = useState([]);
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  const handleFavChange = (evt) => {
+    const idStr = String(evt.foodId);
+    if (evt.type === "added") {
+      setFavFoodIds((prev) => (prev.includes(idStr) ? prev : [...prev, idStr]));
+    } else if (evt.type === "removed") {
+      setFavFoodIds((prev) => prev.filter((x) => x !== idStr));
+      if (mode === "favorite") {
+        setFoods((prev) => prev.filter((x) => String(x.id) !== idStr));
+      }
+    }
+  };
 
   useEffect(() => {
     fetch("http://localhost:9999/food")
@@ -27,16 +42,28 @@ export default function Food({ mode }) {
   }, []);
 
   useEffect(() => {
+    fetch(`http://localhost:9999/favorites?userId=${userId}`)
+      .then((r) => r.json())
+      .then((arr) => {
+        const ids = arr.map((x) => String(x.foodId));
+        setFavFoodIds(ids);
+      })
+      .catch(console.error);
+  }, [userId]);
+
+  useEffect(() => {
     let filtered = data;
 
-    // Search theo title
+    if (mode === "favorite") {
+      filtered = filtered.filter((f) => favFoodIds.includes(String(f.id)));
+    }
+
     if (search.trim() !== "") {
       filtered = filtered.filter((f) =>
         f.title.toLowerCase().includes(search.toLowerCase())
       );
     }
 
-    // Filter theo tag (chỉ lấy món có ít nhất 1 tag thuộc selectedTags)
     if (selectedTags.length > 0) {
       filtered = filtered.filter((f) =>
         f.tags.some((t) => selectedTags.includes(t))
@@ -44,8 +71,8 @@ export default function Food({ mode }) {
     }
 
     setFoods(filtered);
-    setCurrentPage(1); // reset về trang 1 khi search hoặc filter
-  }, [search, selectedTags, data]);
+    setCurrentPage(1);
+  }, [mode, favFoodIds, search, selectedTags, data]);
 
   const totalPages = Math.ceil(foods.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -67,7 +94,12 @@ export default function Food({ mode }) {
                     style={{ height: 200, objectFit: "cover" }}
                   />
                   <Card.Body className="d-flex flex-column">
-                    <Card.Title className="fs-6 mb-2">{f.title}</Card.Title>
+                    <Card.Title className="fs-6 mb-2 d-flex justify-content-between align-items-center">
+                      <span>{f.title}</span>
+
+                      <FavoriteButton foodId={f.id} size={22} onChange={handleFavChange} />
+                    </Card.Title>
+
                     <div className="mb-2">
                       {(f.tags || []).slice(0, 3).map((t) => (
                         <Badge key={t} bg="secondary" className="me-1">

@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 
 const defaultAvatar = "https://i.pravatar.cc/80?img=1";
 
-export default function AvatarMenu({ user }) {
+export default function AvatarMenu({ user, onLogout }) {
   const [open, setOpen] = useState(false);
 
   const name = user?.name || "Guest";
@@ -29,7 +29,7 @@ export default function AvatarMenu({ user }) {
             size="sm"
             variant="outline-secondary"
             className="w-100"
-            onClick={() => alert("Logout demo")}
+            onClick={onLogout}
           >
             Đăng xuất
           </Button>

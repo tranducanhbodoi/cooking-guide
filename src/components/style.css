@@ -57,8 +57,17 @@
 }
 
 .food-list {
-  min-height: 724px; 
+  min-height: 729px; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.heart-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+.card-heart { position: absolute; top: 8px; right: 8px; }
