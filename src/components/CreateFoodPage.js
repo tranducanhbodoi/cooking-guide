@@ -169,7 +169,7 @@ function ImagePicker({
   );
 }
 
-// ===== Page =====
+//  Page 
 export default function CreateFoodPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -200,7 +200,7 @@ export default function CreateFoodPage() {
     steps: [{ id: genId(), text: "", images: [""] }],
   });
 
-  // --- Helpers ---
+  //  Helpers 
   const updateField = (k, v) => setForm((p) => ({ ...p, [k]: v }));
   const toggleTag = (key) =>
     setForm((p) => ({

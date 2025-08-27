@@ -12,14 +12,14 @@ export default function ChefPage({ onLogout }) {
   const [allTags, setAllTags] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
-  // info chef đang đăng nhập (đọc từ localStorage)
+  // info chef đang đăng nhập 
   const [me, setMe] = useState(null); // { id, name, email, role }
 
   const nav = useNavigate();
 
-  // ---- Helpers lấy current user từ localStorage / API ----
+  //Helpers lấy current user từ localStorage / API
   const resolveCurrentUser = async () => {
-    // Ưu tiên: đã lưu sẵn userId
+    
     const storedUserId = localStorage.getItem("userId");
     const storedEmail = localStorage.getItem("email");
     const storedUserJSON = localStorage.getItem("user");
@@ -31,7 +31,7 @@ export default function ChefPage({ onLogout }) {
       } catch {}
     }
     if (storedUserId) {
-      // thử fetch /users/<id>
+      
       try {
         const res = await fetch(`http://localhost:9999/users/${storedUserId}`);
         if (res.ok) {
@@ -48,7 +48,7 @@ export default function ChefPage({ onLogout }) {
         if (Array.isArray(arr) && arr[0]?.id) return arr[0];
       } catch {}
     }
-    // Không tìm được, trả null
+    
     return null;
   };
 
@@ -69,13 +69,13 @@ export default function ChefPage({ onLogout }) {
       }
     } catch (e) {
       console.error(e);
-      setError("Không tải được danh sách món của bạn. Kiểm tra json-server.");
+      setError("Không tải được danh sách món của bạn.");
     } finally {
       setLoading(false);
     }
   };
 
-  // ---- Load tags (ưu tiên /tags, fallback từ foods) ----
+  //Load tags
   const loadTags = async () => {
     try {
       const res = await fetch("http://localhost:9999/tags");
@@ -84,7 +84,6 @@ export default function ChefPage({ onLogout }) {
         setAllTags(data.map(t => ({ key: t.key, label: t.label })));
       }
     } catch {
-      /* ignore */
     }
   };
 
@@ -100,7 +99,6 @@ export default function ChefPage({ onLogout }) {
       }
       await Promise.all([loadFoods(u.id), loadTags()]);
     })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Fallback tags từ foods
@@ -110,7 +108,6 @@ export default function ChefPage({ onLogout }) {
       foods.forEach(f => (f.tags || []).forEach(k => keys.add(k)));
       setAllTags(Array.from(keys).map(k => ({ key: k, label: k })));
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [foods]);
 
   // Toggle tag + clear
@@ -124,7 +121,7 @@ export default function ChefPage({ onLogout }) {
     setQ("");
   };
 
-  // Filter theo text + tag (AND)
+  // Filter theo text + tag 
   const filtered = useMemo(() => {
     const s = q.trim().toLowerCase();
     return foods.filter(f => {
@@ -209,6 +206,7 @@ export default function ChefPage({ onLogout }) {
       {error && <div className="alert alert-danger">{error}</div>}
       {!loading && !filtered.length && <div className="alert alert-info">Không có món nào.</div>}
 
+      {/* the */}
       <div className="row g-3">
         {filtered.map((f) => (
           <div className="col-md-6 col-lg-4" key={f.id}>

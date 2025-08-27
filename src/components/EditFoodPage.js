@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ChefPage.css"; // Reuse the same styles
 
-// Utilities
+
 const genId = () => Math.random().toString(36).slice(2, 6) + Date.now().toString(36);
 const difficulties = ["Dễ", "Trung bình", "Khó"];
 
@@ -16,7 +16,7 @@ const getCurrentChefId = () => {
   return fb ? String(fb) : null;
 };
 
-// ===== Reusable ImagePicker (drag & drop / paste / click-to-upload) =====
+
 function ImagePicker({
   value,
   onChange,
@@ -166,7 +166,7 @@ export default function EditFoodPage() {
     chefId: "", // giữ chefId để PUT không mất
   });
 
-  // --- Load tags & current food ---
+  // Load tags & current food
   useEffect(() => {
     (async () => {
       try {
@@ -183,7 +183,7 @@ export default function EditFoodPage() {
           return;
         }
 
-        // Normalize data for editor (ensure local ids for list items)
+        
         const normalizedIngredients = (food.ingredients || []).map((i) => ({
           id: genId(),
           name: i.name ?? "",
@@ -279,7 +279,7 @@ export default function EditFoodPage() {
       text: text.trim(),
       images: (images || []).map((u) => u.trim()).filter(Boolean),
     })),
-    chefId: form.chefId, // <-- gửi lại chefId để không bị mất
+    chefId: form.chefId, //gửi lại chefId để không bị mất
   });
 
   const handleSave = async (e) => {

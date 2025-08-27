@@ -19,7 +19,7 @@ export default function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          
+
           <Route
             path="/login"
             element={
@@ -31,7 +31,7 @@ export default function App() {
             }
           />
 
-          
+
           <Route
             path="/admin"
             element={
@@ -43,11 +43,14 @@ export default function App() {
             }
           />
 
-          
+
           <Route
             path="/chef"
             element={
-              role === "chef" ? <ChefPage /> : <Navigate to="/login" replace />
+              role === "chef" ?
+                <ChefPage onLogout={handleLogout} />
+                :
+                <Navigate to="/login" replace />
             }
           />
           <Route
@@ -71,11 +74,13 @@ export default function App() {
             }
           />
 
+
+
           {/* User */}
           <Route
             path="/user/*"
             element={
-              role === "user" ? <UserPage onLogout={handleLogout}/> : <Navigate to="/login" replace />
+              role === "user" ? <UserPage onLogout={handleLogout} /> : <Navigate to="/login" replace />
             }
           />
 
@@ -84,11 +89,11 @@ export default function App() {
         </Routes>
 
         {/* Nút đăng xuất (chỉ hiện khi đã login) */}
-        {role === "chef" && (
+        {/* {role === "chef" && (
           <button onClick={handleLogout} style={{ marginTop: "20px" }}>
             Đăng xuất
           </button>
-        )}
+        )} */}
       </div>
     </BrowserRouter>
   );
