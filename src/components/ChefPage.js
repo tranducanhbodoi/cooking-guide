@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
-// Dùng lại css có class .chip .chip.active .tag-group .preview-card .preview-cover ...
-import "./ChefPage.css"; // hoặc "./ChefPage.css" nếu bạn đã có các class tương tự
+import "./ChefPage.css";
 
 export default function ChefPage({ onLogout }) {
   const [foods, setFoods] = useState([]);
@@ -9,83 +8,132 @@ export default function ChefPage({ onLogout }) {
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
 
-  // NEW: tag state
+  // tag state
   const [allTags, setAllTags] = useState([]);
   const [selectedTags, setSelectedTags] = useState([]);
 
+  // info chef đang đăng nhập (đọc từ localStorage)
+  const [me, setMe] = useState(null); // { id, name, email, role }
+
   const nav = useNavigate();
 
-  const loadFoods = async () => {
+  // ---- Helpers lấy current user từ localStorage / API ----
+  const resolveCurrentUser = async () => {
+    // Ưu tiên: đã lưu sẵn userId
+    const storedUserId = localStorage.getItem("userId");
+    const storedEmail = localStorage.getItem("email");
+    const storedUserJSON = localStorage.getItem("user");
+
+    if (storedUserJSON) {
+      try {
+        const u = JSON.parse(storedUserJSON);
+        if (u?.id) return u; // { id, name, email, role }
+      } catch {}
+    }
+    if (storedUserId) {
+      // thử fetch /users/<id>
+      try {
+        const res = await fetch(`http://localhost:9999/users/${storedUserId}`);
+        if (res.ok) {
+          const u = await res.json();
+          if (u?.id) return u;
+        }
+      } catch {}
+    }
+    if (storedEmail) {
+      // fallback: tìm theo email
+      try {
+        const res = await fetch(`http://localhost:9999/users?email=${encodeURIComponent(storedEmail)}`);
+        const arr = await res.json();
+        if (Array.isArray(arr) && arr[0]?.id) return arr[0];
+      } catch {}
+    }
+    // Không tìm được, trả null
+    return null;
+  };
+
+  // ---- Load foods cho đúng chef ----
+  const loadFoods = async (chefId) => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:9999/food");
-      const data = await res.json();
-      setFoods(Array.isArray(data) ? data : []);
+      // json-server hỗ trợ filter theo query param
+      const res = await fetch(`http://localhost:9999/food?chefId=${encodeURIComponent(chefId)}`);
+      if (res.ok) {
+        const data = await res.json();
+        setFoods(Array.isArray(data) ? data : []);
+      } else {
+        // fallback: lấy tất cả rồi filter
+        const resAll = await fetch("http://localhost:9999/food");
+        const all = await resAll.json();
+        setFoods((Array.isArray(all) ? all : []).filter(f => String(f.chefId) === String(chefId)));
+      }
     } catch (e) {
       console.error(e);
-      setError("Không tải được danh sách món. Kiểm tra json-server.");
+      setError("Không tải được danh sách món của bạn. Kiểm tra json-server.");
     } finally {
       setLoading(false);
     }
   };
 
-  // NEW: load tags từ API (nếu lỗi thì sẽ fallback)
+  // ---- Load tags (ưu tiên /tags, fallback từ foods) ----
   const loadTags = async () => {
     try {
       const res = await fetch("http://localhost:9999/tags");
       const data = await res.json();
       if (Array.isArray(data) && data.length) {
         setAllTags(data.map(t => ({ key: t.key, label: t.label })));
-        return;
       }
-    } catch (_) { /* ignore */ }
-    // fallback từ foods (khi foods đã có)
-    // gọi sau khi foods có data
+    } catch {
+      /* ignore */
+    }
   };
 
+  // Khởi tạo: xác định user rồi load foods theo chefId
   useEffect(() => {
-    loadFoods();
+    (async () => {
+      const u = await resolveCurrentUser();
+      setMe(u);
+      if (!u?.id) {
+        setError("Không xác định được tài khoản CHEF. Hãy đảm bảo Login đang lưu userId/email vào localStorage.");
+        setLoading(false);
+        return;
+      }
+      await Promise.all([loadFoods(u.id), loadTags()]);
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  useEffect(() => {
-    loadTags();
-  }, []);
-
-  // Fallback khi API /tags không có: suy ra từ foods
+  // Fallback tags từ foods
   useEffect(() => {
     if (!allTags.length && foods.length) {
       const keys = new Set();
       foods.forEach(f => (f.tags || []).forEach(k => keys.add(k)));
-      const fromFoods = Array.from(keys).map(k => ({ key: k, label: k }));
-      setAllTags(fromFoods);
+      setAllTags(Array.from(keys).map(k => ({ key: k, label: k })));
     }
-  }, [foods, allTags.length]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [foods]);
 
-  // helpers
+  // Toggle tag + clear
   const toggleTag = (key) => {
     setSelectedTags(prev =>
       prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]
     );
   };
-
   const clearFilters = () => {
     setSelectedTags([]);
     setQ("");
   };
 
-  // Filter theo text + tag (AND: phải chứa TẤT CẢ tag đã chọn)
+  // Filter theo text + tag (AND)
   const filtered = useMemo(() => {
     const s = q.trim().toLowerCase();
     return foods.filter(f => {
-      const byText = !s
-        || (f.title || "").toLowerCase().includes(s)
-        || (Array.isArray(f.tags) && f.tags.join(" ").toLowerCase().includes(s));
-
+      const byText =
+        !s ||
+        (f.title || "").toLowerCase().includes(s) ||
+        (Array.isArray(f.tags) && f.tags.join(" ").toLowerCase().includes(s));
       const tags = Array.isArray(f.tags) ? f.tags : [];
-      const byTags = selectedTags.length === 0
-        ? true
-        : selectedTags.every(t => tags.includes(t));
-
+      const byTags = selectedTags.length === 0 || selectedTags.every(t => tags.includes(t));
       return byText && byTags;
     });
   }, [q, foods, selectedTags]);
@@ -106,7 +154,9 @@ export default function ChefPage({ onLogout }) {
       <div className="page-hero mb-4 d-flex align-items-center justify-content-between flex-wrap">
         <div>
           <h2 className="m-0">Quản lý món ăn (Chef)</h2>
-          <div className="text-muted">Tạo, sửa, xóa, lọc theo tag</div>
+          <div className="text-muted">
+            {me ? <>Đang xem món của: <strong>{me.name}</strong> ({me.email})</> : "Đang xác định tài khoản..."}
+          </div>
         </div>
         <div className="d-flex gap-2">
           <Link className="btn btn-primary" to="/chef/food/create">+ Tạo món mới</Link>
@@ -138,7 +188,7 @@ export default function ChefPage({ onLogout }) {
                     onClick={() => toggleTag(t.key)}
                     title={t.label}
                   >
-                    {t.label} {/* hoặc `${t.label} (${t.key})` */}
+                    {t.label}
                   </span>
                 ))}
               </div>
@@ -176,8 +226,18 @@ export default function ChefPage({ onLogout }) {
                   ))}
                 </div>
                 <div className="mt-auto d-flex gap-2">
-                  <button className="btn btn-sm btn-outline-primary" onClick={() => nav(`/chef/food/edit/${f.id}`)}>Sửa</button>
-                  <button className="btn btn-sm btn-outline-danger" onClick={() => handleDelete(f.id)}>Xóa</button>
+                  <button
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={() => nav(`/chef/food/edit/${f.id}`)}
+                  >
+                    Sửa
+                  </button>
+                  <button
+                    className="btn btn-sm btn-outline-danger"
+                    onClick={() => handleDelete(f.id)}
+                  >
+                    Xóa
+                  </button>
                 </div>
               </div>
             </div>
