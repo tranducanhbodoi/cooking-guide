@@ -19,7 +19,7 @@ export default function App() {
     <BrowserRouter>
       <div>
         <Routes>
-          {/* Nếu chưa login → redirect về /login */}
+          
           <Route
             path="/login"
             element={
@@ -31,7 +31,7 @@ export default function App() {
             }
           />
 
-          {/* Admin */}
+          
           <Route
             path="/admin"
             element={
@@ -43,7 +43,7 @@ export default function App() {
             }
           />
 
-          {/* Chef và các route con */}
+          
           <Route
             path="/chef"
             element={
