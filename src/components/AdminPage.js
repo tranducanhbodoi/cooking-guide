@@ -30,7 +30,7 @@ export default function AdminPage({ onLogout }) {
               className={activeTab === "users" ? "active" : ""}
               onClick={() => setActiveTab("users")}
             >
-              Quản lý User
+              List User
             </Nav.Link>
           </Nav>
         </div>

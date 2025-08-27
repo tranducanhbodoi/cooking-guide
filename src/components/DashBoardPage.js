@@ -53,13 +53,22 @@ export default function DashboardPage() {
 
   const COLORS = ["#82ca9d", "#ffc658"];
 
+  // ---- Top món ăn được yêu thích nhất ----
+  const favCountByFood = foods.map((f) => {
+    const count = favorites.filter((fav) => fav.foodId.toString() === f.id.toString()).length;
+    return { name: f.title, count };
+  }).filter(item => item.count > 0);
+
+  // Sắp xếp giảm dần và lấy top 5
+  const topFoods = favCountByFood.sort((a, b) => b.count - a.count).slice(0, 5);
+
   return (
     <div className="p-4">
       <h2 className="mb-4">Tổng quan</h2>
       <div className="stat-cards mb-4">
         <div className="stat-card">
           <h3>{users.length}</h3>
-          <p>Tổng số User (tất cả)</p>
+          <p>Tổng số Tài Khoản (tất cả)</p>
         </div>
         <div className="stat-card">
           <h3>{chefs.length}</h3>
@@ -67,33 +76,20 @@ export default function DashboardPage() {
         </div>
         <div className="stat-card">
           <h3>{customers.length}</h3>
-          <p>Tổng số Khách truy cập</p>
+          <p>Tổng số User</p>
         </div>
         <div className="stat-card">
           <h3>{foods.length}</h3>
-          <p>Tổng số món ăn</p>
+          <p>Tổng số công thức món ăn</p>
         </div>
       </div>
 
-      <h2>Thống kê số món theo Chef</h2>
+      <h2>Thống kê số công thức chef đã tạo</h2>
       <ResponsiveContainer width="100%" height={400}>
-        <BarChart
-          data={data}
-          margin={{ top: 20, right: 30, left: 20, bottom: 40 }}
-        >
+        <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 40 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis
-            dataKey="name"
-            label={{ value: "Tên Chef", position: "bottom", offset: 10 }}
-          />
-          <YAxis
-            label={{
-              value: "Số lượng món",
-              angle: -90,
-              position: "insideLeft",
-              offset: -5,
-            }}
-          />
+          <XAxis dataKey="name" label={{ value: "Tên Chef", position: "bottom", offset: 10 }} />
+          <YAxis label={{ value: "Số lượng món", angle: -90, position: "insideLeft", offset: -5 }} />
           <Tooltip />
           <Bar dataKey="count" fill="#82ca9d" />
         </BarChart>
@@ -102,20 +98,24 @@ export default function DashboardPage() {
       <h2 className="mt-8">Thống kê hành vi người dùng</h2>
       <ResponsiveContainer width="100%" height={400}>
         <PieChart>
-          <Pie
-            data={pieData}
-            dataKey="value"
-            nameKey="name"
-            outerRadius={150}
-            fill="#8884d8"
-            label
-          >
+          <Pie data={pieData} dataKey="value" nameKey="name" outerRadius={150} fill="#8884d8" label>
             {pieData.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
           <Legend />
         </PieChart>
+      </ResponsiveContainer>
+
+      <h2 className="mt-8">Top món ăn được yêu thích nhất</h2>
+      <ResponsiveContainer width="100%" height={400}>
+        <BarChart data={topFoods} margin={{ top: 20, right: 30, left: 20, bottom: 40 }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" angle={-20} textAnchor="end" interval={0} height={70} />
+          <YAxis label={{ value: "Lượt yêu thích", angle: -90, position: "insideLeft", offset: -5 }} />
+          <Tooltip />
+          <Bar dataKey="count" fill="#8884d8" />
+        </BarChart>
       </ResponsiveContainer>
     </div>
   );
