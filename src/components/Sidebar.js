@@ -5,7 +5,7 @@ import "./Sidebar.css";
 const items = [
   { to: "/user/all", label: "Sản phẩm", icon: <Box size={20} /> },
   { to: "/user/favorite", label: "Yêu thích", icon: <Heart size={20} /> },
-  // { to: "/user/collections", label: "Bộ sưu tập", icon: <Collection size={20} /> },
+  { to: "/user/collections", label: "Bộ sưu tập", icon: <Collection size={20} /> },
 ];
 
 export default function Sidebar() {

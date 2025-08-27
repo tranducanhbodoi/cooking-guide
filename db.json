@@ -1435,11 +1435,6 @@
       "foodId": "5b68merw0wou"
     },
     {
-      "id": "6fcc",
-      "userId": "3",
-      "foodId": "1"
-    },
-    {
       "id": "5e4b",
       "userId": "f84f",
       "foodId": "1"
@@ -1468,30 +1463,50 @@
       "id": "c792",
       "userId": "4",
       "foodId": "mmkomervhnjz"
+    },
+    {
+      "id": "ad77",
+      "userId": "3",
+      "foodId": "303"
+    },
+    {
+      "id": "27a2",
+      "userId": "3",
+      "foodId": "310"
+    },
+    {
+      "id": "cd25",
+      "userId": "3",
+      "foodId": "313"
+    },
+    {
+      "id": "3039",
+      "userId": "3",
+      "foodId": "314"
     }
   ],
   "collections": [
     {
-      "id": "1",
-      "userId": 3,
-      "name": "All"
-    },
-    {
-      "id": "2",
-      "userId": 3,
-      "name": "Đồ uống yêu thích"
+      "id": "cb24",
+      "userId": "3",
+      "name": "BST DO UONG"
     }
   ],
   "collectionItems": [
     {
-      "collectionId": 1,
-      "foodId": 1,
-      "id": "5fd8"
+      "id": "de03",
+      "collectionId": "cb24",
+      "foodId": "202"
     },
     {
-      "collectionId": 2,
-      "foodId": 202,
-      "id": "e61c"
+      "id": "1b17",
+      "collectionId": "cb24",
+      "foodId": "5b68merw0wou"
+    },
+    {
+      "id": "5434",
+      "collectionId": "cb24",
+      "foodId": "mmkomervhnjz"
     }
   ]
 }

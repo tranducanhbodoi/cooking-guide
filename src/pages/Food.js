@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Row, Col, Card, Button, Badge, Pagination } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import TagFilter from "./TagFilter";
 import FavoriteButton from "../components/FavoriteButton";
-
+import CollectionButton from "../components/CollectionButton";
 import { useContext } from "react";
 import { SearchContext } from "../context/SearchContext";
 
@@ -11,6 +11,10 @@ export default function Food({ mode }) {
   const [foods, setFoods] = useState([]);
   const [data, setData] = useState([]);
   const [favFoodIds, setFavFoodIds] = useState([]);
+
+  const [colFoodIds, setColFoodIds] = useState([]);
+  const [collectionName, setCollectionName] = useState("");
+
   const userId = String(localStorage.getItem("userId") || "1");
 
   const { search } = useContext(SearchContext);
@@ -18,6 +22,11 @@ export default function Food({ mode }) {
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+
+  const { id: paramCollectionId } = useParams();
+  const collectionId = paramCollectionId ? String(paramCollectionId) : null;
+
+  const navigate = useNavigate();
 
   const handleFavChange = (evt) => {
     const idStr = String(evt.foodId);
@@ -28,6 +37,32 @@ export default function Food({ mode }) {
       if (mode === "favorite") {
         setFoods((prev) => prev.filter((x) => String(x.id) !== idStr));
       }
+    }
+  };
+
+  const handleCollectionChange = (evt) => {
+    const fid = String(evt.foodId);
+    const cid = String(evt.collectionId);
+    if (evt.type === "removed") {
+      setColFoodIds((prev) => {
+        const next = prev.filter((x) => x !== fid);
+        setFoods((cur) => cur.filter((x) => String(x.id) !== fid));
+
+        // nếu bộ sưu tập đang xem trở thành trống thì xóa hẳn collection trong db
+        if (
+          mode === "collection" &&
+          collectionId === cid &&
+          next.length === 0
+        ) {
+          fetch(`http://localhost:9999/collections/${collectionId}`, {
+            method: "DELETE",
+          })
+            .catch(console.error)
+            .finally(() => navigate("/user/collections"));
+        }
+
+        return next;
+      });
     }
   };
 
@@ -52,7 +87,32 @@ export default function Food({ mode }) {
   }, [userId]);
 
   useEffect(() => {
+    if (mode !== "collection" || !collectionId) {
+      setColFoodIds([]);
+      setCollectionName("");
+      return;
+    }
+    fetch(`http://localhost:9999/collectionItems?collectionId=${collectionId}`)
+      .then((r) => r.json())
+      .then((arr) => setColFoodIds(arr.map((x) => String(x.foodId))))
+      .catch(console.error);
+
+    fetch(`http://localhost:9999/collections/${collectionId}`)
+      .then((r) => r.json())
+      .then((col) => setCollectionName(col.name))
+      .catch(console.error);
+  }, [mode, collectionId]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [search, selectedTags]);
+
+  useEffect(() => {
     let filtered = data;
+
+    if (mode === "collection") {
+      filtered = filtered.filter((f) => colFoodIds.includes(String(f.id)));
+    }
 
     if (mode === "favorite") {
       filtered = filtered.filter((f) => favFoodIds.includes(String(f.id)));
@@ -71,8 +131,7 @@ export default function Food({ mode }) {
     }
 
     setFoods(filtered);
-    setCurrentPage(1);
-  }, [mode, favFoodIds, search, selectedTags, data]);
+  }, [mode, colFoodIds, favFoodIds, search, selectedTags, data]);
 
   const totalPages = Math.ceil(foods.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -81,6 +140,9 @@ export default function Food({ mode }) {
 
   return (
     <Row>
+      {mode === "collection" && (
+        <h5 className="mb-3">Bộ sưu tập: {collectionName}</h5>
+      )}
       <Col md={9} className="food-list">
         <Row className="row-cols-2 row-cols-md-3 g-3">
           {currentFoods.length > 0 ? (
@@ -96,8 +158,18 @@ export default function Food({ mode }) {
                   <Card.Body className="d-flex flex-column">
                     <Card.Title className="fs-6 mb-2 d-flex justify-content-between align-items-center">
                       <span>{f.title}</span>
-
-                      <FavoriteButton foodId={f.id} size={22} onChange={handleFavChange} />
+                      <div>
+                        <FavoriteButton
+                          foodId={f.id}
+                          size={22}
+                          onChange={handleFavChange}
+                        />
+                        <CollectionButton
+                          foodId={f.id}
+                          size={20}
+                          onChange={handleCollectionChange}
+                        />
+                      </div>
                     </Card.Title>
 
                     <div className="mb-2">
@@ -120,7 +192,7 @@ export default function Food({ mode }) {
             ))
           ) : (
             <div className="text-center w-100 py-5">
-              <h6>Không có món bạn muốn</h6>
+              <h6>Không có món nào</h6>
             </div>
           )}
         </Row>

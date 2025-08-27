@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Badge, Button } from "react-bootstrap";
+import { Badge, Button, Col, Row } from "react-bootstrap";
 import FavoriteButton from "../components/FavoriteButton";
-
+import CollectionButton from "../components/CollectionButton";
 export default function FoodDetail() {
   const { id } = useParams();
   const [food, setFood] = useState(null);
@@ -11,7 +11,6 @@ export default function FoodDetail() {
   useEffect(() => {
     let ignore = false;
 
-    
     fetch(`http://localhost:9999/food/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Không tải được món ăn");
@@ -49,36 +48,39 @@ export default function FoodDetail() {
   const tags = Array.isArray(food.tags) ? food.tags : [];
 
   return (
-    <div className="food-detail">
-      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 12 }}>
-        
-
+    <div className="food-detail ">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: 12,
+          marginBottom: 12,
+        }}
+      >
         <h3 style={{ margin: 0, flex: 1 }}>{food.title}</h3>
-
-        <FavoriteButton
-          foodId={food.id}
-          size={22}
-          onChange={() => {}}
-        />
+        <span className="icon-row">
+          <FavoriteButton foodId={food.id} size={22} onChange={() => {}} />
+          <CollectionButton foodId={food.id} size={20} />
+        </span>
       </div>
 
       {food.image && (
-  <div style={{ textAlign: "center" }}>
-    <img
-      src={food.image}
-      alt={food.title}
-      className="detail-cover mb-3"
-      style={{
-        width: "60%",          
-        height: "500px",       
-        objectFit: "cover",    
-        borderRadius: "12px",
-        display: "block",      
-        margin: "0 auto"       
-      }}
-    />
-  </div>
-)}
+        <div style={{ textAlign: "center" }}>
+          <img
+            src={food.image}
+            alt={food.title}
+            className="detail-cover mb-3"
+            style={{
+              width: "60%",
+              height: "500px",
+              objectFit: "cover",
+              borderRadius: "12px",
+              display: "block",
+              margin: "0 auto",
+            }}
+          />
+        </div>
+      )}
 
       <div className="mb-3">
         {tags.map((t) => (
@@ -104,13 +106,34 @@ export default function FoodDetail() {
       </ul>
 
       <h6>Các bước</h6>
-      <ol>
+      <Row>
         {(food.steps || []).map((s, idx) => (
-          <li key={idx} className="mb-2">
-            {s.text || s}
-          </li>
+          <Col md={6} key={idx} className="mb-4">
+            <div className="p-2 border rounded h-100">
+              <strong>Bước {idx + 1}:</strong>
+              <p style={{ marginTop: 8 }}>{s.text || s}</p>
+              {s.images && s.images.length > 0 && (
+                <div>
+                  {s.images.map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt={`step-${idx + 1}-${i}`}
+                      style={{
+                        width: "100%",
+                        height: 400,
+                        objectFit: "cover",
+                        borderRadius: 8,
+                        marginBottom: 8,
+                      }}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          </Col>
         ))}
-      </ol>
+      </Row>
     </div>
   );
 }

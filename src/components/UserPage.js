@@ -6,7 +6,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import Food from "../pages/Food";
 import FoodDetail from "../pages/FoodDetail";
-
+import CollectionsPage from "./CollectionsPage";
 import "./style.css"
 export default function UserPage({ onLogout }) {
   return (
@@ -17,7 +17,7 @@ export default function UserPage({ onLogout }) {
       
       <Container fluid className="mt-3">
         <Row>
-          <Col md={2} className="mb-3">
+          <Col md={2} className="mb-3" style={{backgroundColor: 'white'}}>
             <Sidebar />
           </Col>
 
@@ -26,7 +26,8 @@ export default function UserPage({ onLogout }) {
               <Route path="/" element={<Navigate to="all" replace />} />
               <Route path="all" element={<Food mode="all" />} />
               <Route path="favorite" element={<Food mode="favorite" />} />
-              <Route path="collections" element={<Food mode="collections" />} />
+              <Route path="collections" element={<CollectionsPage />} />
+              <Route path="collections/:id" element={<Food mode="collection" />} />
               <Route path="food/:id" element={<FoodDetail />} />
               <Route path="*" element={<div>404 — Không tìm thấy trang</div>} />
             </Routes>

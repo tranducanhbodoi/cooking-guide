@@ -1,7 +1,11 @@
 .sidebar {
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  border-right: 1.5px solid #b3d1ff;
+  min-height: 100vh;
+  padding-right: 10px;
 }
 
 .sidebar-item {

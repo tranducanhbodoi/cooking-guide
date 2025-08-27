@@ -41,7 +41,7 @@ export default function FavoriteButton({ foodId, size = 22, color = "#66b2ff", o
   };
 
   return (
-    <button className="heart-btn" onClick={toggle} aria-label="Yêu thích">
+    <button className="heart-btn icon-btn" onClick={toggle} aria-label="Yêu thích">
       {favId ? <HeartFill size={size} color={color} /> : <Heart size={size} />}
     </button>
   );
