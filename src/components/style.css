@@ -35,7 +35,7 @@
 }
 
 /* Tag filter box */
-.tag-list-scroll { max-height: 320px; overflow: auto; }
+.tag-list-scroll { max-height: 607px; overflow: auto; }
 
 /* Food detail */
 .detail-cover {

@@ -20,7 +20,7 @@ export default function TagFilter({selectedTags, setSelectedTags}) {
   return (
     <Card>
       <Card.Body>
-        <Card.Title className="fs-6">Lọc theo tag (demo)</Card.Title>
+        <Card.Title className="fs-6">Lọc theo tag</Card.Title>
         <div className="tag-list-scroll">
           {tags.map((t) => (
             <Form.Check

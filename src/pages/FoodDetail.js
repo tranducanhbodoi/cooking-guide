@@ -1,37 +1,90 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Badge, Button } from "react-bootstrap";
+import FavoriteButton from "../components/FavoriteButton";
 
 export default function FoodDetail() {
   const { id } = useParams();
-  const [foods, setFoods] = useState([]);
   const [food, setFood] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:9999/food")
-      .then((response) => response.json())
-      .then((result) => {
-        setFoods(result);
-        const found = result.find((x) => String(x.id) === String(id));
-        setFood(found || null);
+    let ignore = false;
+
+    
+    fetch(`http://localhost:9999/food/${id}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Không tải được món ăn");
+        return res.json();
       })
-      .catch((err) => console.error(err));
+      .then((item) => {
+        if (!ignore) setFood(item || null);
+      })
+      .catch((err) => {
+        console.error(err);
+        fetch("http://localhost:9999/food")
+          .then((r) => r.json())
+          .then((list) => {
+            if (!ignore) {
+              const found = Array.isArray(list)
+                ? list.find((x) => String(x.id) === String(id))
+                : null;
+              setFood(found || null);
+            }
+          })
+          .catch((e) => console.error(e));
+      })
+      .finally(() => {
+        if (!ignore) setLoading(false);
+      });
+
+    return () => {
+      ignore = true;
+    };
   }, [id]);
 
-  if (!food) return <div>Đang tải...</div>;
+  if (loading) return <div>Đang tải...</div>;
+  if (!food) return <div>Không tìm thấy món.</div>;
+
+  const tags = Array.isArray(food.tags) ? food.tags : [];
 
   return (
     <div className="food-detail">
-      <img
-        src={food.image}
-        alt={food.title}
-        className="detail-cover mb-3"
-      />
-      <h3 className="mb-2">{food.title}</h3>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 12 }}>
+        
+
+        <h3 style={{ margin: 0, flex: 1 }}>{food.title}</h3>
+
+        <FavoriteButton
+          foodId={food.id}
+          size={22}
+          onChange={() => {}}
+        />
+      </div>
+
+      {food.image && (
+  <div style={{ textAlign: "center" }}>
+    <img
+      src={food.image}
+      alt={food.title}
+      className="detail-cover mb-3"
+      style={{
+        width: "60%",          
+        height: "500px",       
+        objectFit: "cover",    
+        borderRadius: "12px",
+        display: "block",      
+        margin: "0 auto"       
+      }}
+    />
+  </div>
+)}
 
       <div className="mb-3">
-        {(food.tags || []).map((t) => (
-          <Badge key={t} bg="secondary" className="me-1">{t}</Badge>
+        {tags.map((t) => (
+          <Badge key={String(t)} bg="secondary" className="me-1">
+            {t}
+          </Badge>
         ))}
       </div>
 
@@ -53,13 +106,11 @@ export default function FoodDetail() {
       <h6>Các bước</h6>
       <ol>
         {(food.steps || []).map((s, idx) => (
-          <li key={idx} className="mb-2">{s.text}</li>
+          <li key={idx} className="mb-2">
+            {s.text || s}
+          </li>
         ))}
       </ol>
-
-      <Link to="/all">
-        <Button variant="secondary" className="mt-2">← Quay lại</Button>
-      </Link>
     </div>
   );
 }
