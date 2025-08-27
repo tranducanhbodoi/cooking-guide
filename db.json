@@ -29,654 +29,354 @@
       "role": "USER"
     },
     {
-      
-      "id":  "4",
-      
-      "name":  "User Four",
-      
-      "email":  "user4@example.com",
-      
-      "password":  "pass4",
-      
-      "role":  "USER"
-    
+      "id": "4",
+      "name": "User Four",
+      "email": "user4@example.com",
+      "password": "pass4",
+      "role": "USER"
     },
     {
-      
-      "id":  "5",
-      
-      "name":  "Chef A",
-      
-      "email":  "chef.a@example.com",
-      
-      "password":  "chef1",
-      
-      "role":  "CHEF"
-    
+      "id": "5",
+      "name": "Chef A",
+      "email": "chef.a@example.com",
+      "password": "chef1",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "6",
-      
-      "name":  "Admin X",
-      
-      "email":  "admin.x@example.com",
-      
-      "password":  "admin1",
-      
-      "role":  "ADMIN"
-    
+      "id": "6",
+      "name": "Admin X",
+      "email": "admin.x@example.com",
+      "password": "admin1",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "7",
-      
-      "name":  "User Five",
-      
-      "email":  "user5@example.com",
-      
-      "password":  "pass5",
-      
-      "role":  "USER"
-    
+      "id": "7",
+      "name": "User Five",
+      "email": "user5@example.com",
+      "password": "pass5",
+      "role": "USER"
     },
     {
-      
-      "id":  "8",
-      
-      "name":  "User Six",
-      
-      "email":  "user6@example.com",
-      
-      "password":  "pass6",
-      
-      "role":  "USER"
-    
+      "id": "8",
+      "name": "User Six",
+      "email": "user6@example.com",
+      "password": "pass6",
+      "role": "USER"
     },
     {
-      
-      "id":  "9",
-      
-      "name":  "Chef B",
-      
-      "email":  "chef.b@example.com",
-      
-      "password":  "chef2",
-      
-      "role":  "CHEF"
-    
+      "id": "9",
+      "name": "Chef B",
+      "email": "chef.b@example.com",
+      "password": "chef2",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "10",
-      
-      "name":  "User Seven",
-      
-      "email":  "user7@example.com",
-      
-      "password":  "pass7",
-      
-      "role":  "USER"
-    
+      "id": "10",
+      "name": "User Seven",
+      "email": "user7@example.com",
+      "password": "pass7",
+      "role": "USER"
     },
     {
-      
-      "id":  "11",
-      
-      "name":  "Admin Y",
-      
-      "email":  "admin.y@example.com",
-      
-      "password":  "admin2",
-      
-      "role":  "ADMIN"
-    
+      "id": "11",
+      "name": "Admin Y",
+      "email": "admin.y@example.com",
+      "password": "admin2",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "12",
-      
-      "name":  "User Eight",
-      
-      "email":  "user8@example.com",
-      
-      "password":  "pass8",
-      
-      "role":  "USER"
-    
+      "id": "12",
+      "name": "User Eight",
+      "email": "user8@example.com",
+      "password": "pass8",
+      "role": "USER"
     },
     {
-      
-      "id":  "13",
-      
-      "name":  "User Nine",
-      
-      "email":  "user9@example.com",
-      
-      "password":  "pass9",
-      
-      "role":  "USER"
-    
+      "id": "13",
+      "name": "User Nine",
+      "email": "user9@example.com",
+      "password": "pass9",
+      "role": "USER"
     },
     {
-      
-      "id":  "14",
-      
-      "name":  "Chef C",
-      
-      "email":  "chef.c@example.com",
-      
-      "password":  "chef3",
-      
-      "role":  "CHEF"
-    
+      "id": "14",
+      "name": "Chef C",
+      "email": "chef.c@example.com",
+      "password": "chef3",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "15",
-      
-      "name":  "User Ten",
-      
-      "email":  "user10@example.com",
-      
-      "password":  "pass10",
-      
-      "role":  "USER"
-    
+      "id": "15",
+      "name": "User Ten",
+      "email": "user10@example.com",
+      "password": "pass10",
+      "role": "USER"
     },
     {
-      
-      "id":  "16",
-      
-      "name":  "Admin Z",
-      
-      "email":  "admin.z@example.com",
-      
-      "password":  "admin3",
-      
-      "role":  "ADMIN"
-    
+      "id": "16",
+      "name": "Admin Z",
+      "email": "admin.z@example.com",
+      "password": "admin3",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "17",
-      
-      "name":  "User Eleven",
-      
-      "email":  "user11@example.com",
-      
-      "password":  "pass11",
-      
-      "role":  "USER"
-    
+      "id": "17",
+      "name": "User Eleven",
+      "email": "user11@example.com",
+      "password": "pass11",
+      "role": "USER"
     },
     {
-      
-      "id":  "18",
-      
-      "name":  "User Twelve",
-      
-      "email":  "user12@example.com",
-      
-      "password":  "pass12",
-      
-      "role":  "USER"
-    
+      "id": "18",
+      "name": "User Twelve",
+      "email": "user12@example.com",
+      "password": "pass12",
+      "role": "USER"
     },
     {
-      
-      "id":  "19",
-      
-      "name":  "Chef D",
-      
-      "email":  "chef.d@example.com",
-      
-      "password":  "chef4",
-      
-      "role":  "CHEF"
-    
+      "id": "19",
+      "name": "Chef D",
+      "email": "chef.d@example.com",
+      "password": "chef4",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "20",
-      
-      "name":  "User Thirteen",
-      
-      "email":  "user13@example.com",
-      
-      "password":  "pass13",
-      
-      "role":  "USER"
-    
+      "id": "20",
+      "name": "User Thirteen",
+      "email": "user13@example.com",
+      "password": "pass13",
+      "role": "USER"
     },
     {
-      
-      "id":  "21",
-      
-      "name":  "Admin A1",
-      
-      "email":  "admin.a1@example.com",
-      
-      "password":  "admin4",
-      
-      "role":  "ADMIN"
-    
+      "id": "21",
+      "name": "Admin A1",
+      "email": "admin.a1@example.com",
+      "password": "admin4",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "22",
-      
-      "name":  "User Fourteen",
-      
-      "email":  "user14@example.com",
-      
-      "password":  "pass14",
-      
-      "role":  "USER"
-    
+      "id": "22",
+      "name": "User Fourteen",
+      "email": "user14@example.com",
+      "password": "pass14",
+      "role": "USER"
     },
     {
-      
-      "id":  "23",
-      
-      "name":  "User Fifteen",
-      
-      "email":  "user15@example.com",
-      
-      "password":  "pass15",
-      
-      "role":  "USER"
-    
+      "id": "23",
+      "name": "User Fifteen",
+      "email": "user15@example.com",
+      "password": "pass15",
+      "role": "USER"
     },
     {
-      
-      "id":  "24",
-      
-      "name":  "Chef E",
-      
-      "email":  "chef.e@example.com",
-      
-      "password":  "chef5",
-      
-      "role":  "CHEF"
-    
+      "id": "24",
+      "name": "Chef E",
+      "email": "chef.e@example.com",
+      "password": "chef5",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "25",
-      
-      "name":  "User Sixteen",
-      
-      "email":  "user16@example.com",
-      
-      "password":  "pass16",
-      
-      "role":  "USER"
-    
+      "id": "25",
+      "name": "User Sixteen",
+      "email": "user16@example.com",
+      "password": "pass16",
+      "role": "USER"
     },
     {
-      
-      "id":  "26",
-      
-      "name":  "Admin B1",
-      
-      "email":  "admin.b1@example.com",
-      
-      "password":  "admin5",
-      
-      "role":  "ADMIN"
-    
+      "id": "26",
+      "name": "Admin B1",
+      "email": "admin.b1@example.com",
+      "password": "admin5",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "27",
-      
-      "name":  "User Seventeen",
-      
-      "email":  "user17@example.com",
-      
-      "password":  "pass17",
-      
-      "role":  "USER"
-    
+      "id": "27",
+      "name": "User Seventeen",
+      "email": "user17@example.com",
+      "password": "pass17",
+      "role": "USER"
     },
     {
-      
-      "id":  "28",
-      
-      "name":  "User Eighteen",
-      
-      "email":  "user18@example.com",
-      
-      "password":  "pass18",
-      
-      "role":  "USER"
-    
+      "id": "28",
+      "name": "User Eighteen",
+      "email": "user18@example.com",
+      "password": "pass18",
+      "role": "USER"
     },
     {
-      
-      "id":  "29",
-      
-      "name":  "Chef F",
-      
-      "email":  "chef.f@example.com",
-      
-      "password":  "chef6",
-      
-      "role":  "CHEF"
-    
+      "id": "29",
+      "name": "Chef F",
+      "email": "chef.f@example.com",
+      "password": "chef6",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "30",
-      
-      "name":  "User Nineteen",
-      
-      "email":  "user19@example.com",
-      
-      "password":  "pass19",
-      
-      "role":  "USER"
-    
+      "id": "30",
+      "name": "User Nineteen",
+      "email": "user19@example.com",
+      "password": "pass19",
+      "role": "USER"
     },
     {
-      
-      "id":  "31",
-      
-      "name":  "Admin C1",
-      
-      "email":  "admin.c1@example.com",
-      
-      "password":  "admin6",
-      
-      "role":  "ADMIN"
-    
+      "id": "31",
+      "name": "Admin C1",
+      "email": "admin.c1@example.com",
+      "password": "admin6",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "32",
-      
-      "name":  "User Twenty",
-      
-      "email":  "user20@example.com",
-      
-      "password":  "pass20",
-      
-      "role":  "USER"
-    
+      "id": "32",
+      "name": "User Twenty",
+      "email": "user20@example.com",
+      "password": "pass20",
+      "role": "USER"
     },
     {
-      
-      "id":  "33",
-      
-      "name":  "User Twenty-One",
-      
-      "email":  "user21@example.com",
-      
-      "password":  "pass21",
-      
-      "role":  "USER"
-    
+      "id": "33",
+      "name": "User Twenty-One",
+      "email": "user21@example.com",
+      "password": "pass21",
+      "role": "USER"
     },
     {
-      
-      "id":  "34",
-      
-      "name":  "Chef G",
-      
-      "email":  "chef.g@example.com",
-      
-      "password":  "chef7",
-      
-      "role":  "CHEF"
-    
+      "id": "34",
+      "name": "Chef G",
+      "email": "chef.g@example.com",
+      "password": "chef7",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "35",
-      
-      "name":  "User Twenty-Two",
-      
-      "email":  "user22@example.com",
-      
-      "password":  "pass22",
-      
-      "role":  "USER"
-    
+      "id": "35",
+      "name": "User Twenty-Two",
+      "email": "user22@example.com",
+      "password": "pass22",
+      "role": "USER"
     },
     {
-      
-      "id":  "36",
-      
-      "name":  "Admin D1",
-      
-      "email":  "admin.d1@example.com",
-      
-      "password":  "admin7",
-      
-      "role":  "ADMIN"
-    
+      "id": "36",
+      "name": "Admin D1",
+      "email": "admin.d1@example.com",
+      "password": "admin7",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "37",
-      
-      "name":  "User Twenty-Three",
-      
-      "email":  "user23@example.com",
-      
-      "password":  "pass23",
-      
-      "role":  "USER"
-    
+      "id": "37",
+      "name": "User Twenty-Three",
+      "email": "user23@example.com",
+      "password": "pass23",
+      "role": "USER"
     },
     {
-      
-      "id":  "38",
-      
-      "name":  "User Twenty-Four",
-      
-      "email":  "user24@example.com",
-      
-      "password":  "pass24",
-      
-      "role":  "USER"
-    
+      "id": "38",
+      "name": "User Twenty-Four",
+      "email": "user24@example.com",
+      "password": "pass24",
+      "role": "USER"
     },
     {
-      
-      "id":  "39",
-      
-      "name":  "Chef H",
-      
-      "email":  "chef.h@example.com",
-      
-      "password":  "chef8",
-      
-      "role":  "CHEF"
-    
+      "id": "39",
+      "name": "Chef H",
+      "email": "chef.h@example.com",
+      "password": "chef8",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "40",
-      
-      "name":  "User Twenty-Five",
-      
-      "email":  "user25@example.com",
-      
-      "password":  "pass25",
-      
-      "role":  "USER"
-    
+      "id": "40",
+      "name": "User Twenty-Five",
+      "email": "user25@example.com",
+      "password": "pass25",
+      "role": "USER"
     },
     {
-      
-      "id":  "41",
-      
-      "name":  "Admin E1",
-      
-      "email":  "admin.e1@example.com",
-      
-      "password":  "admin8",
-      
-      "role":  "ADMIN"
-    
+      "id": "41",
+      "name": "Admin E1",
+      "email": "admin.e1@example.com",
+      "password": "admin8",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "42",
-      
-      "name":  "User Twenty-Six",
-      
-      "email":  "user26@example.com",
-      
-      "password":  "pass26",
-      
-      "role":  "USER"
-    
+      "id": "42",
+      "name": "User Twenty-Six",
+      "email": "user26@example.com",
+      "password": "pass26",
+      "role": "USER"
     },
     {
-      
-      "id":  "43",
-      
-      "name":  "User Twenty-Seven",
-      
-      "email":  "user27@example.com",
-      
-      "password":  "pass27",
-      
-      "role":  "USER"
-    
+      "id": "43",
+      "name": "User Twenty-Seven",
+      "email": "user27@example.com",
+      "password": "pass27",
+      "role": "USER"
     },
     {
-      
-      "id":  "44",
-      
-      "name":  "Chef I",
-      
-      "email":  "chef.i@example.com",
-      
-      "password":  "chef9",
-      
-      "role":  "CHEF"
-    
+      "id": "44",
+      "name": "Chef I",
+      "email": "chef.i@example.com",
+      "password": "chef9",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "45",
-      
-      "name":  "User Twenty-Eight",
-      
-      "email":  "user28@example.com",
-      
-      "password":  "pass28",
-      
-      "role":  "USER"
-    
+      "id": "45",
+      "name": "User Twenty-Eight",
+      "email": "user28@example.com",
+      "password": "pass28",
+      "role": "USER"
     },
     {
-      
-      "id":  "46",
-      
-      "name":  "Admin F1",
-      
-      "email":  "admin.f1@example.com",
-      
-      "password":  "admin9",
-      
-      "role":  "ADMIN"
-    
+      "id": "46",
+      "name": "Admin F1",
+      "email": "admin.f1@example.com",
+      "password": "admin9",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "47",
-      
-      "name":  "User Twenty-Nine",
-      
-      "email":  "user29@example.com",
-      
-      "password":  "pass29",
-      
-      "role":  "USER"
-    
+      "id": "47",
+      "name": "User Twenty-Nine",
+      "email": "user29@example.com",
+      "password": "pass29",
+      "role": "USER"
     },
     {
-      
-      "id":  "48",
-      
-      "name":  "User Thirty",
-      
-      "email":  "user30@example.com",
-      
-      "password":  "pass30",
-      
-      "role":  "USER"
-    
+      "id": "48",
+      "name": "User Thirty",
+      "email": "user30@example.com",
+      "password": "pass30",
+      "role": "USER"
     },
     {
-      
-      "id":  "49",
-      
-      "name":  "Chef J",
-      
-      "email":  "chef.j@example.com",
-      
-      "password":  "chef10",
-      
-      "role":  "CHEF"
-    
+      "id": "49",
+      "name": "Chef J",
+      "email": "chef.j@example.com",
+      "password": "chef10",
+      "role": "CHEF"
     },
     {
-      
-      "id":  "50",
-      
-      "name":  "User Thirty-One",
-      
-      "email":  "user31@example.com",
-      
-      "password":  "pass31",
-      
-      "role":  "USER"
-    
+      "id": "50",
+      "name": "User Thirty-One",
+      "email": "user31@example.com",
+      "password": "pass31",
+      "role": "USER"
     },
     {
-      
-      "id":  "51",
-      
-      "name":  "Admin G1",
-      
-      "email":  "admin.g1@example.com",
-      
-      "password":  "admin10",
-      
-      "role":  "ADMIN"
-    
+      "id": "51",
+      "name": "Admin G1",
+      "email": "admin.g1@example.com",
+      "password": "admin10",
+      "role": "ADMIN"
     },
     {
-      
-      "id":  "52",
-      
-      "name":  "User Thirty-Two",
-      
-      "email":  "user32@example.com",
-      
-      "password":  "pass32",
-      
-      "role":  "USER"
-    
+      "id": "52",
+      "name": "User Thirty-Two",
+      "email": "user32@example.com",
+      "password": "pass32",
+      "role": "USER"
     },
     {
-      
-      "id":  "53",
-      
-      "name":  "User Thirty-Three",
-      
-      "email":  "user33@example.com",
-      
-      "password":  "pass33",
-      
-      "role":  "USER"
-    
+      "id": "53",
+      "name": "User Thirty-Three",
+      "email": "user33@example.com",
+      "password": "pass33",
+      "role": "USER"
     },
     {
       "id": "1756224941441",
@@ -918,7 +618,8 @@
             "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/thanh-pham-762.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "44"
     },
     {
       "id": "202",
@@ -961,7 +662,8 @@
             "https://cdn.tgdd.vn/2021/11/CookRecipe/GalleryStep/xay-sinh-to-xoai-1.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "5"
     },
     {
       "id": "hroimerv6ejd",
@@ -1005,7 +707,8 @@
             "https://s-media-cache-ak0.pinimg.com/originals/1c/ea/d1/1cead147608b3276d02a622c6e294bd1.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "14"
     },
     {
       "id": "c6zymerv9c2b",
@@ -1064,7 +767,8 @@
             "https://www.hoteljob.vn/files/Anh-HTJ-Hong/cach-pha-cac-loai-cocktail-pho-bien-nhat-10.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "24"
     },
     {
       "id": "mmkomervhnjz",
@@ -1140,7 +844,8 @@
             "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/thanh-pham-1789.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "2"
     },
     {
       "id": "5b68merw0wou",
@@ -1216,7 +921,8 @@
             "https://img.dominos.vn/cach-lam-banh-pizza-1.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "34"
     },
     {
       "id": "301",
@@ -1264,7 +970,8 @@
             "https://cdn.tgdd.vn/2025/01/CookRecipe/GalleryStep/so-che-thit-bap-bo-1.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "34"
     },
     {
       "id": "302",
@@ -1307,7 +1014,8 @@
             "https://cdn.tgdd.vn/2021/01/CookRecipe/GalleryStep/so-che-cac-nguyen-lieu-khac-403.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "49"
     },
     {
       "id": "303",
@@ -1345,7 +1053,8 @@
             "https://cdn.tgdd.vn/2025/05/CookRecipe/GalleryStep/thuong-thuc.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "14"
     },
     {
       "id": "304",
@@ -1383,7 +1092,8 @@
             "https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/vuonghoai/cach-lam-com-tam-suon-bi-cha/cach-lam-com-tam-suon-bi-cha-6.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "14"
     },
     {
       "id": "306",
@@ -1421,7 +1131,8 @@
             "https://cdn.tgdd.vn/2021/12/CookRecipe/Avatar/59.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "5"
     },
     {
       "id": "307",
@@ -1453,7 +1164,8 @@
             "https://gofood.vn/upload/r/tong-hop-tin-tuc/huong-dan-mon-ngon/sushi-ca-hoi-nigiri.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "1756224941441"
     },
     {
       "id": "308",
@@ -1491,7 +1203,8 @@
             "https://cdn.tgdd.vn/2021/05/CookRecipe/GalleryStep/lam-sot-muoi-kim-chi-8.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "29"
     },
     {
       "id": "309",
@@ -1529,7 +1242,8 @@
             "https://cdn.tgdd.vn/2021/03/content/shio-ramen-800x450.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "44"
     },
     {
       "id": "310",
@@ -1556,7 +1270,8 @@
             "https://cdn.tgdd.vn/2021/07/CookRecipe/GalleryStep/lam-bo-luc-lac-2.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "14"
     },
     {
       "id": "311",
@@ -1588,7 +1303,8 @@
             "https://cdn.tgdd.vn/2021/04/CookRecipe/GalleryStep/do-banh-xeo-1.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "44"
     },
     {
       "id": "312",
@@ -1620,7 +1336,8 @@
             "https://cdn.tgdd.vn/2021/04/CookRecipe/GalleryStep/thanh-pham-1812.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "14"
     },
     {
       "id": "313",
@@ -1658,7 +1375,8 @@
             "https://cdn.tgdd.vn/2021/09/CookRecipe/GalleryStep/thanh-pham-643.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "1756224941441"
     },
     {
       "id": "314",
@@ -1696,7 +1414,8 @@
             "https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/thanh-pham-1163.jpg"
           ]
         }
-      ]
+      ],
+      "chefId": "29"
     }
   ],
   "favorites": [
@@ -1704,11 +1423,6 @@
       "id": "cf24",
       "userId": "3",
       "foodId": "202"
-    },
-    {
-      "id": "cece",
-      "userId": "3",
-      "foodId": "1"
     },
     {
       "id": "2a5f",
@@ -1719,6 +1433,11 @@
       "id": "56d8",
       "userId": "3",
       "foodId": "5b68merw0wou"
+    },
+    {
+      "id": "6fcc",
+      "userId": "3",
+      "foodId": "1"
     }
   ],
   "collections": [

@@ -17,34 +17,79 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        {/* Nếu chưa login → redirect về /login */}
-        <Route
-          path="/login"
-          element={!role ? <Login onLogin={(r) => setRole(r.toLowerCase())} /> : <Navigate to={`/${role}`} replace />}
-        />
+      <div>
+        <Routes>
+          
+          <Route
+            path="/login"
+            element={
+              !role ? (
+                <Login onLogin={(r) => setRole(r.toLowerCase())} />
+              ) : (
+                <Navigate to={`/${role}`} replace />
+              )
+            }
+          />
 
-        {/* Admin */}
-        <Route
-          path="/admin"
-          element={role === "admin" ? <AdminPage onLogout={handleLogout} /> : <Navigate to="/login" replace />}
-        />
+          
+          <Route
+            path="/admin"
+            element={
+              role === "admin" ? (
+                <AdminPage onLogout={handleLogout} />
+              ) : (
+                <Navigate to="/login" replace />
+              )
+            }
+          />
 
-        {/* Chef */}
-        <Route
-          path="/chef/*"
-          element={role === "chef" ? <ChefPage /> : <Navigate to="/login" replace />}
-        />
+          
+          <Route
+            path="/chef"
+            element={
+              role === "chef" ? <ChefPage /> : <Navigate to="/login" replace />
+            }
+          />
+          <Route
+            path="/chef/food/create"
+            element={
+              role === "chef" ? (
+                <CreateFoodPage />
+              ) : (
+                <Navigate to="/login" replace />
+              )
+            }
+          />
+          <Route
+            path="/chef/food/edit/:id"
+            element={
+              role === "chef" ? (
+                <EditFoodPage />
+              ) : (
+                <Navigate to="/login" replace />
+              )
+            }
+          />
 
-        {/* User */}
-        <Route
-          path="/user"
-          element={role === "user" ? <UserPage /> : <Navigate to="/login" replace />}
-        />
+          {/* User */}
+          <Route
+            path="/user/*"
+            element={
+              role === "user" ? <UserPage onLogout={handleLogout}/> : <Navigate to="/login" replace />
+            }
+          />
 
-        {/* Default */}
-        <Route path="*" element={<Navigate to="/login" replace />} />
-      </Routes>
+          {/* Default */}
+          <Route path="*" element={<Navigate to="/login" replace />} />
+        </Routes>
+
+        {/* Nút đăng xuất (chỉ hiện khi đã login) */}
+        {role === "chef" && (
+          <button onClick={handleLogout} style={{ marginTop: "20px" }}>
+            Đăng xuất
+          </button>
+        )}
+      </div>
     </BrowserRouter>
   );
 }
