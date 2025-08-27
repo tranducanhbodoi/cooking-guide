@@ -88,7 +88,7 @@ export default function UserManagement() {
     <Container fluid className="admin-page">
       <Row className="header-row mb-3 align-items-center">
         <Col>
-          <h1 className="page-title">Quản Lý Người Dùng</h1>
+          <h1 className="page-title">List User</h1>
           <p className="page-subtitle">Tìm kiếm và lọc người dùng theo vai trò</p>
         </Col>
         <Col className="d-flex justify-content-end">
