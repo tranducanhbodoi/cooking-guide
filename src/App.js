@@ -83,7 +83,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
 
-        {/* Nút đăng xuất (chỉ hiện khi đã login) */}
+       
         {role === "chef" && (
           <button onClick={handleLogout} style={{ marginTop: "20px" }}>
             Đăng xuất
